@@ -1,10 +1,10 @@
-<main class="md:mt-8 text-xl px-0 mx-auto">
+<header class="mt-4 md:mt-8 text-xl px-0 mx-auto">
   {% assign avatar_url = site.avatar | default: null %}
   <div class="mb-4 md:mb-10 md:grid md:grid-cols-6 items-center justify-center">
     <div class="{% if avatar_url %}col-span-4{% else %}col-span-6{% endif %} max-w-sm mx-auto">
       <h1
-        class="text-3xl tracking-wider md:tracking-widest font-normal text-stone-700 dark:text-gray-50">
-        Cassidy's blog template (in jekyll)
+        class="text-2xl md:text-3xl tracking-wider md:tracking-widest font-normal text-white">
+        yokolet's notelets
       </h1>
       <h2
         class="text-2xl md:leading-3 text-neutral-500 dark:text-neutral-400 pt-4">
@@ -20,8 +20,4 @@
     </div>
     {% endif %}
   </div>
-
-  <nav class="text-center mt-7 pb-4 text-base md:text-lg">
-    {% include nav_links.html %}
-  </nav>
-</main>
+</header>

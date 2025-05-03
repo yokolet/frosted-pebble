@@ -4,11 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
 </head>
-<body class="m-auto max-w-2xl p-10 font-mono bg-stone-100 dark:bg-neutral-800">
+<body class="font-rubik bg-[#394148]">
+  {% include nav_bar.html %}
   {% include head.html %}
   {{ content }}
   {% include footer.html %}
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  <script src="https://kit.fontawesome.com/81bc1eec45.js" crossorigin="anonymous"></script>
 </body>
 </html>
