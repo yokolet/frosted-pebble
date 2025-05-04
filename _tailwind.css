@@ -7,6 +7,19 @@
     --font-rubik: "Rubik", sans-serif;
 }
 
+@theme {
+  --animate-fade-in: fade-in 1s ease-in-out forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 @layer components {
   .hamburger {
     @apply relative cursor-pointer w-[24px] h-[24px] transition-all duration-[250];

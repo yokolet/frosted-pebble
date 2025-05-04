@@ -15,15 +15,18 @@
     <!-- Mobile Menu -->
     <div
         id="menu"
-        class="absolute hidden md:hidden pt-6 pb-3 bg-[#394148] opacity-95 left-0 right-0 top-18 z-100">
-      <div class="flex flex-col items-start justify-center w-full space-y-6 font-bold text-stone-300">
+        class="absolute hidden md:hidden pt-6 pb-3 bg-[#2f3438] opacity-95 left-0 right-0 top-10 z-100">
+      <div class="flex flex-col items-start justify-center w-full space-y-6 font-medium text-sm text-stone-300">
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url %}
         {% assign current = 'text-rose-400' %}
         {% endif %}
         <div class="border-b-1 border-gray-600 w-full">
-          <a class="{{ current }} pl-6 hover:text-rose-200 hover:underline" href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+          <a
+              class="{{ current }} pl-6 uppercase hover:text-rose-200 hover:underline"
+              href="{{ link.url | prepend: site.baseurl }}"
+          >{{ link.text }}</a>
         </div>
 
         {% endfor %}
@@ -31,14 +34,17 @@
     </div>
     <!-- menu for md and lg -->
     <div id="nav-menu" class="hidden md:flex items-center pl-10">
-      <ul class="flex flex-row space-x-5 font-bold divide-x-1 divide-gray-600">
+      <ul class="flex flex-row space-x-5 font-medium text-sm divide-x-1 divide-gray-600">
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url %}
         {% assign current = 'text-rose-400' %}
         {% endif %}
         <li class="{{ current }}">
-          <a class="{{ current }} pl-0 pr-5 hover:text-rose-200 hover:underline" href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+          <a
+              class="{{ current }} pl-0 pr-5 uppercase hover:text-rose-200 hover:underline"
+              href="{{ link.url | prepend: site.baseurl }}"
+          >{{ link.text }}</a>
         </li>
         {% endfor %}
       </ul>
