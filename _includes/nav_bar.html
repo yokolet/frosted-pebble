@@ -1,4 +1,4 @@
-<nav class="relative mx-auto p-6 bg-[#262b2f] text-stone-400">
+<nav class="relative mx-auto px-6 pt-5 pb-3 bg-[#262b2f] text-stone-400">
   <div class="flex flex-row items-center justify-between">
     <!-- Hamburger Button -->
     <div class="md:hidden">
@@ -29,15 +29,16 @@
         {% endfor %}
       </div>
     </div>
+    <!-- menu for md and lg -->
     <div id="nav-menu" class="hidden md:flex items-center pl-10">
-      <ul class="flex flex-row space-x-10 font-bold">
+      <ul class="flex flex-row space-x-5 font-bold divide-x-1 divide-gray-600">
         {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url == link.url %}
         {% assign current = 'text-rose-400' %}
         {% endif %}
         <li class="{{ current }}">
-          <a class="{{ current }} hover:text-rose-200 hover:underline" href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+          <a class="{{ current }} pl-0 pr-5 hover:text-rose-200 hover:underline" href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
         </li>
         {% endfor %}
       </ul>
