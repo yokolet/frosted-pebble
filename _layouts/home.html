@@ -2,27 +2,33 @@
 layout: default
 ---
 
-<div class="prose prose-xl font-normal dark:prose-invert">
-  {{content}}
-</div>
+<main>
+  <h2 class="mt-12 pb-4 text-center text-xl font-bold text-neutral-400">
+    recent posts
+  </h2>
 
-<h2 class="mt-12 pb-4 text-center text-xl font-bold text-stone-500 dark:text-stone-300">
-  Here's my most recent posts
-</h2>
-<ul>
-  {% for post in site.posts limit:3 %}
-  <li class="text-base list-inside pb-8">
-    {% include post_link.html post=post %}
-  </li>
-  {% endfor %}
-  <li class="hidden only:block italic py-4 text-lg text-neutral-400 dark:text-neutral-50">
-    No Posts yet
-  </li>
-</ul>
-
-<p class="font-normal text-lg text-center pb-4 text-stone-500 dark:text-stone-300">
-  You can also <a href="/rss.xml"
-                  class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>
-</p>
-
-{% include site_tags.html %}
+  <div class="animate-fade-in container mx-auto max-w-7xl p-2 md:p-10">
+    <div class="grid gap-6 grid-col-1 text-white md:grid-cols-3">
+      {% for post in paginator.posts %}
+      <div class="text-base pb-2">
+        {% include post_link.html post=post %}
+      </div>
+      {% endfor %}
+      <div class="hidden only:block italic py-4 text-lg text-neutral-400">
+        No Posts yet
+      </div>
+    </div>
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="flex justify-center gap-4 py-6">
+    {% if paginator.next_page %}
+    <a
+        href="{{ paginator.next_page_path }}"
+        class="px-4 py-2 bg-[#495158] font-semibold text-neutral-300 hover:text-neutral-100 hover:bg-rose-300"
+    >
+      View More &raquo;
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</main>

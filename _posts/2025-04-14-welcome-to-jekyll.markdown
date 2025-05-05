@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+featured_image: lake-motosu-and-fuji.jpg
 date:   2025-04-14 00:11:17 +0900
 categories: jekyll update
 tags:
