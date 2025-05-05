@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<main>
+  <h2 class="mt-6 md:mt-12 pb-4 text-center text-lg md:text-xl font-bold text-neutral-400">
+    blog posts
+  </h2>
+
+  <div class="animate-fade-in container mx-auto max-w-7xl p-2 md:p-10">
+    {% include posts.html %}
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="mx-auto flex justify-center gap-4 py-6 font-semibold mb-[48px]"><!-- pagination -->
+    {% if paginator.previous_page %}
+    <a
+        href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-300 hover:text-white transition-colors"
+    >&laquo; Previous</a>
+    {% endif %}
+
+    <span class="px-4 py-2 text-neutral-400">
+    Page {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+    {% if paginator.next_page %}
+    <a
+        href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-300 hover:text-white transition-colors">
+      Next &raquo;</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% include site_tags.html %}
+</main>

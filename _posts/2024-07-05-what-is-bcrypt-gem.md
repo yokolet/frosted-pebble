@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is bcrypt gem?
-hero_height: is-small
+featured_image: lake-motosu-and-fuji.jpg
 date: 2024-07-05 23:33 +0900
 ---
 When a Ruby on Rails application is created by `rails new` command, we typically see bcrypt gem in `Gemfile`.

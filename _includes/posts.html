@@ -1,0 +1,10 @@
+<div class="flex flex-col items-start justify-start mx-auto space-y-1">
+  {% for post in paginator.posts %}
+  <div class="text-base pb-2">
+    {% include post_list.html post=post %}
+  </div>
+  {% endfor %}
+  <div class="hidden only:block italic py-4 text-lg text-neutral-400">
+    No Posts yet
+  </div>
+</div>

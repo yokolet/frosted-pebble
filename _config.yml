@@ -35,6 +35,8 @@ gitlab_username:  idealapt404
 navigation:
   - text: Home
     url: /
+  - text: Blog
+    url: /blog/
   - text: Portfolio
     url: /portfolio/
   - text: Algo
@@ -52,7 +54,8 @@ plugins:
 permalink: /:year/:month/:title.html
 
 # Pagination Settings
-paginate: 6
+paginate: 10
+paginate_path: "blog/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

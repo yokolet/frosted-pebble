@@ -2,12 +2,14 @@
 layout: post
 title: Conserving Network Resources -- Keep-Alive
 featured_image: fall-lake-kawaguchi.jpg
+excerpt_separator: <!--more-->
 date: 2024-07-17 21:05 +0900
 ---
 "When you type a URL in your browser, what will happen?"
 If you are a web developer, you might have answered this sort of interview question once or twice.
 It would be a popular question to test the knowledge how the Internet works.
 As it is famous, you will find many answers here and there online.
+<!--more-->
 
 A common answer includes steps below:
 1. DNS Resolution
