@@ -19,7 +19,6 @@ group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.17.0'
   gem 'jekyll-tailwindcss', '~> 0.7.0'
   gem 'jekyll-compose', '~> 0.12.0'
-  gem 'jekyll-paginate-v2', '~> 3.0'
 end
 
 gem 'tailwindcss-ruby', '~> 4.1', '>= 4.1.3'

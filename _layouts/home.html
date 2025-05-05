@@ -1,7 +1,5 @@
 ---
 layout: default
-pagination:
-  enabled: true
 ---
 
 <main>
@@ -10,9 +8,9 @@ pagination:
   </h2>
 
   <div class="animate-fade-in container mx-auto max-w-7xl p-2 md:p-10">
-    <div class="grid gap-6 grid-col-1 text-white md:grid-cols-3 md:grid-rows-2">
-      {% for post in site.posts limit:6 %}
-      <div class="text-base list-inside pb-8">
+    <div class="grid gap-6 grid-col-1 text-white md:grid-cols-3">
+      {% for post in paginator.posts %}
+      <div class="text-base pb-2">
         {% include post_link.html post=post %}
       </div>
       {% endfor %}
