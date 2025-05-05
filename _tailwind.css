@@ -55,3 +55,9 @@
     @apply -rotate-45 translate-y-[6px] -translate-x-[6px]
   }
 }
+
+@layer components {
+  .social-link {
+    @apply text-[#606669] inline-block text-[16px] h-[24px] w-[24px] leading-[1.5] mx-[10px] my-[6px] hover:text-rose-400;
+  }
+}

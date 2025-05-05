@@ -1,6 +1,41 @@
-<footer class="py-10 max-w-2xl mx-auto">
-  <p class="text-center text-sm text-stone-500 dark:text-stone-300">
-    &copy; {{ site.time | date: "%Y"}}
-    Yoko Harada
-  </p>
+<footer class="w-full mx-auto mx-0">
+  <div class="bg-[#262b2f] py-[30px] text-[#aeb0b1] text-[16px] text-center leading-[1.5]">
+    <div class="flex flex-rows items-center justify-center space-x-20 mb-[30px]">
+      {% if site.linkedin_username %}
+      <a
+          href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+          class="social-link"
+      >
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+      {% if site.github_username %}
+      <a
+          href="https://github.com/{{ site.github_username }}"
+          class="social-link"
+      >
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+      {% if site.gitlab_username %}
+      <a
+          href="https://gitlab.com/{{ site.github_username }}"
+          class="social-link"
+      >
+        <i class="fa fa-gitlab" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+      {% if site.twitter_username %}
+      <a
+          href="https://twitter.com/{{ site.twitter_username }}"
+          class="social-link"
+      >
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+    </div>
+    <div class="text-[#606669] text-[14px] leading-[1.5]">
+      &copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{site.title}}</a>
+    </div>
+  </div>
 </footer>

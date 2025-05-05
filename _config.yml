@@ -27,7 +27,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 domain: idealapt404.github.io
 baseurl: /frosted-pebble # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: whyidealapt404
+twitter_username: idealapt404
+linkedin_username: idealapt404
 github_username:  idealapt404
 gitlab_username:  idealapt404
 
