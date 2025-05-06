@@ -2,28 +2,53 @@
 layout: default
 ---
 
-<section id="post" class="container">
-  <h1 class="my-3 text-3xl font-light tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-    {{page.title}}
-  </h1>
+<section id="post" class="">
+  <div class="flex flex-col items-center justify-center mx-auto w-9/10 md:w-5/6 bg-neutral-50 text-neutral-700">
+    {% if page.featured_image %}
+    <img class="mask-r-from-30% max-h-[100px] md:max-h-[250px]"
+         src="{{ '/assets/img/featured/' | append: page.featured_image | prepend: site.baseurl }}"
+         alt="{{ page.title }}">
+    {% endif %}
+    <h1 class="my-2 md:my-3 text-lg md:text-xl font-semibold tracking-tight text-neutral-800">
+      {{page.title}}
+    </h1>
+    <div class="text-xs md:text-sm italic font-extralight mt-1 text-neutral-500">
+      <time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
+    </div>
+    <div class="w-full border-t-1 border-zinc-300 mt-2">
+      {% if page.subtitle %}
+      <p class="mt-2 font-semibold text-gray-600 text-sm italic leading-8">
+        {{page.subtitle}}
+      </p>
+      {% endif %}
+      <div class="w-full px-4 my-4 prose max-w-full mx-auto text-sm md:text-base font-extralight">
+        {{ content }}
+      </div>
 
-  <div class="text-base italic font-extralight mt-2 text-gray-600 dark:text-gray-400">
-    <time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
+      {% if page.tags.size > 0 %}
+      <div class="w-full mx-auto px-4 my-4">
+        Tags:
+        {% for tag in page.tags %}
+        <a
+            class="text-indigo-500 hover:text-indigo-600 hover:underline"
+            href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" rel="tag"
+        >{{ tag }}</a>
+        {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
-
-  {% for tag in page.tags %}
-  {% include tag.html tag=tag %}
-  {% endfor %}
-
-  <hr class="h-1 mx-auto my-5 dark:border-white">
-
-  {% if page.subtitle %}
-  <p class="mt-2 font-semibold text-gray-600 dark:text-gray-300 text-lg italic leading-8">
-    {{page.subtitle}}
-  </p>
-  {% endif %}
-
-  <div class="mt-4 prose font-extralight dark:prose-invert">{{ content }}</div>
+  <nav class="mt-10 mb-[48px] w-9/10 md:w-5/6 flex flex-row items-center justify-center space-x-10 mx-auto font-semibold">
+    {% if page.next.url %}
+    <a
+        class="ml-6 px-6 py-2 text-sm md:text-base bg-[#495158] font-semibold text-neutral-300 hover:text-neutral-50 hover:bg-rose-300"
+        href="{{ page.next.url | prepend: site.baseurl }}">Newer Post</a>
+    {% endif %}
+    {% if page.previous.url %}
+    <a
+        class="mr-6 px-6 py-2 text-sm md:text-base bg-[#495158] font-semibold text-neutral-300 hover:text-neutral-50 hover:bg-rose-300"
+        href="{{ page.previous.url | prepend: site.baseurl }}" >Older Post</a>
+    {% endif %}
+  </nav>
 </section>
-
-{% include site_tags.html %}

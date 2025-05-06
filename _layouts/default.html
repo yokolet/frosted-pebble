@@ -5,10 +5,15 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/syntax-highlighting.css' | relative_url }}">
 </head>
 <body class="font-rubik bg-[#394148]">
   {% include nav_bar.html %}
-  {% include head.html %}
+  {% if page.dir == '/' or page.dir == '/blog/' or page.dir == '/portfolio/' or page.dir == '/algo/' or page.dir == '/about/' %}
+    {% include head.html %}
+  {% else %}
+    {% include small_head.html %}
+  {% endif %}
   {{ content }}
   {% include footer.html %}
   <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
