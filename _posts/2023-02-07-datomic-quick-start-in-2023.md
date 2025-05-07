@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Datomic Quick Start in 2023
-hero_height: is-small
+featured_image: snow-on-camellia.jpg
+excerpt_separator: <!--more-->
+tags: [Clojure]
 date: 2023-02-07 18:03 +0900
 ---
 I used to use Datomic, [https://www.datomic.com](https://www.datomic.com), a lot.
 Datomic is a unique database. The most attractive feature would be the idea of preserving transactions.
 Based on the transaction id, Datomic is able to pull out the past data which has been already updated later.
-
+<!--more-->
 Other than that Datomic has more unique and remarkable features.
 However, the downside is, it is not so easy to get started.
 Datomic has an excellent documentation on its web site.
@@ -28,7 +30,7 @@ The choice here is the no cost, starter edition here, still, you need to sing up
 Once you are successfully registered, the license key will be emailed.
 The license key needs to run Datomic with a transactor. I'll explain later.
 
-You are now able to download Datomic from the Downloads link at my datomic web site.
+You are now able to download Datomic from the Downloads link at my datomic website.
 I downloaded the latest version, datomic-pro-1.0.6610.zip, as of early February, 2023.
 The archive name is datomic-pro, however, my license is of "Datomic Pro Starter Edition, " as I see it at my Account page.
 It looks the archive name doesn't matter in terms of the type of license.
@@ -56,7 +58,7 @@ this section explains how to set the license key.
 
 You should have the Datomic license key emailed when you registered yourself at my.datomic.com.
 The email has `license-key=[long-long-six-line-or-so-text key]` in its body part.
-You may copy paste the email text to the config file.
+You may copy-paste the email text to the config file.
 You might want to open the attachment to copy/paste.
 Both are the same.
 
@@ -165,7 +167,7 @@ Now, the gpg encrypted credential is ready.
 ##### Edit project.clj
 
 The last piece is to configure the Datomic private repository in the project.clj file.
-How to setup is written in the my Datomic account page.
+How to set up is written in the Datomic account page.
 I wrote earlier "I downloaded the latest version, datomic-pro-1.0.6610.zip, as of early February, 2023."
 So the datomic-pro version is 1.0.6610.
 

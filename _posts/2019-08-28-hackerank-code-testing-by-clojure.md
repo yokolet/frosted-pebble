@@ -1,8 +1,10 @@
 ---
 layout: post
 title: HackerRank Code Testing by Clojure
+featured_image: lake-shoji-in-summer.jpg
+excerpt_separator: <!--more-->
+tags: [Clojure]
 date: 2019-08-28 16:20 -0700
-hero_height: is-small
 ---
 
 Recently, I decided to give Clojure a try.
@@ -10,6 +12,7 @@ This post is about testing HackerRank problems on a local env.
 
 I used to write Clojure code for my day job, however, no Clojure at all for two years.
 Instead, almost all were done by Python.
+<!--more-->
 I became familiar with Python's functional programming world now.
 Aside of ML/DL projects, I did bunch at HackerRank, leetcode or sort.
 After a while, I thought, "maybe I can solve problems by Clojure like Python..."
