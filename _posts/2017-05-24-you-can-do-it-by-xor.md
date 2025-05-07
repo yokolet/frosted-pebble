@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "You can do it by XOR"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: fuji-from-tokyo-bay.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 ---
 
 This post is about XOR bit manipulations.
 XOR is surprisingly capable of solving various algorithm problems.
+Let's dig deep to see how we can use XOR.
+<!--more-->
 
 #### XOR basics ####
 

@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Iterator To Flatten It"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: summer-trail.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array]
 ---
 
 Let's revisit the Iterator pattern.
 "Iterator" is one of design patterns in object-oriented programming (OOP).
 Needless to say, extremely famous Gang of Four (Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides) are creators.
 As in the Wikipedia's [Iterator pattern](https://en.wikipedia.org/wiki/Iterator_pattern),
+<!--more-->
 the iterator pattern is used when traversing *container* without knowing how the container works. It is OOP's favorite pattern to "decouple" the iterator from container.
 
 What does that actually mean? The iterator defines two methods, `hasNext()` and `next()`.

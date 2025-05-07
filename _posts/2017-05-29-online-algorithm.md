@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Online Algorithm - mean and median"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: river-in-woods.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Heap]
 ---
 
 This post discusses so-called Online Algorithm.
@@ -13,7 +12,7 @@ a mean or median.
 Summing up all, then dividing by a number of given values gives us the mean.
 For a median, sorting the given values then finding center index (indices)
 would be the all.
-
+<!--more-->
 What if input is not limited? say, a stream of data?
 
 As for mean, still summing up and saving it to a value may work.

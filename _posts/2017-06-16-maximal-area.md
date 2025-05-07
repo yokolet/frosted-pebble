@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "Maximal Square and Rectangle"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: bench-and-lake.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array]
 ---
 
 
 A bunch of algorithm questions take a style of "maximum is a good thing."
 Maximal sum, maximal length or maximal size are examples.
 This memo is about maximal size, precisely, square and rectangle.
-
+<!--more-->
 These two have quite similar descriptions. So, I call those siblings.
 The problems are "given 2D matrix filled with 0's and 1's, find maximal square/rectangle."
 Approaches how to solve are also similar.

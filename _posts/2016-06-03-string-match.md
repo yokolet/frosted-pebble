@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "String Match"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: white-flower-at-cafe.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, String]
 ---
 
 The topic here is string search algorithm and not a regular expression.
 For example, find the position(s) of matched patterns in a loooong text.
 
 The easiest implementation is:
-
+<!--more-->
 1. check each character of the given pattern one by one
 2. shift starting index by one
 3. repeat 1 and 2

@@ -1,24 +1,21 @@
 ---
 layout: post
 title: "AngularJS on Hoplon"
-description: ""
-category: 
-tags: [AngularJS, Hoplon, ClojureScript]
-hero_height: is-small
+featured_image: small-cherry-blossoms.jpg
+excerpt_separator: <!--more-->
+tags: [AngularJS, Clojure]
 ---
 
 About a month ago, [Alan Dipert](https://github.com/alandipert) and [Micha Niskin](https://github.com/micha) gave a presentation at Triangle Clojure Users Meetup.
 Their topic was about Hoplon, [hoplon.io](hoplon.io), ClojureScript Framework.
 It was impressive one.
-
+<!--more-->
 Hoplon made easy to get started ClojureScript coding by its boot 
 (if you have tried ClojureScript, you should know it is really cumbersome to just start it).
 Also, Hoplon has a simple state machine and a feature to render HTML tags.
 Except boot, everything works on ClojureScript, not Clojure.
 
 After their presentation, one attendee asked a question, "What about AngularJS? Does Angular work on Hoplon?"
-
-<!--more-->
 
 Recently, this question would be one of FAQs for all client side frameworks.
 There's no doubt AngularJS is becoming an industry standard.
@@ -75,7 +72,7 @@ That's it. Hoplon generates `resrouces/public/hello-angular.html`, which is on t
 On browser, open the hello-angular.html file.
 If you use html code inspection feature, you'll see the output as in below:
 
-<img width="500" src="/assets/img/hello-angular-html.png" alt="generated html code">
+<img width="500" src="{{ '/assets/img/blog/hello-angular-html.png' | prepend: site.baseurl }}" alt="generated html code">
 
 As you can see `class="ng-binding"` on the line which has Angular's double curly braces,
 AngularJS on Hoplon worked without any special effort.
@@ -165,7 +162,7 @@ The method is defined in line 7 of `buttons.cljs.hl`.
 Again, if you use browser's inspection feature, you'll see the generated code below.
 Also, you'll see picture name will be changed to picture3.png or picture4.png.
 
-<img width="700" src="/assets/img/angular-buttons-html.png" alt="generated html code">
+<img width="700" src="{{ '/assets/img/blog/angular-buttons-html.png' | prepend: site.baseurl }}" alt="generated html code">
 <br/><br/>
 
 #### It worked!

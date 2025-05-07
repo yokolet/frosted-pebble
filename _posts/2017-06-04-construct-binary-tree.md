@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Construct Binary Tree"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: hydrangea-in-rain.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Tree]
 ---
 
 Serialize, Deserialize a binary tree are a popular algorithm questions
@@ -12,7 +11,7 @@ It depends on a programming language, but in most cases,
 a binary tree is expressed by an object tree.
 Each node can have at most two children: left node and right node.
 Once the binary tree is constructed, it is not language neutral anymore.
-
+<!--more-->
 What is a programming language independent form?
 A *string* would be the answer.
 Sometime, creating a string from binary tree is called *serialize*.

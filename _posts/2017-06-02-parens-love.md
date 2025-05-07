@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Parentheses Love"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: marguerite-and-sea.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, String]
 ---
 
 As a lisp family language programmer, I used to write a lot of parentheses.
@@ -13,7 +12,7 @@ In an algorithm world, *parentheses* often includes
 other brackets as well, such as `{}` or `[]`, but that's it.
 At most three types of pairs are there, some problems are much complicated to find a solution.
 This post is about such problems.
-
+<!--more-->
 Out of my curiosity, I googled names of so-called parentheses.
 According Wikipedia's [Bracket](https://en.wikipedia.org/wiki/Bracket), it looks those
 have their own names with a lot of variants. Probably, famous ones are these.

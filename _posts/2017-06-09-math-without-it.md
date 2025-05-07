@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "Math Without Operator To Do It"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: coffee-and-water.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 ---
 
 Do division or power calculation without language provided operators --
 we see this sort of questions among algorithm problems.
 I wrote [Addtion without +/- operators](http://yokolet.github.io/2017/05/24/you-can-do-it-by-xor.html#addition-without-----operators) in the post about XOR related questions.
 "Divide without division" and "power without its operator or function" are examples as well.
-
+<!--more-->
 Not like the addition, a division and power need to repeat.
 Intuitive implementations would be simply repeat subtraction or multiplication.
 Those calculates correctly, however, time complexity tends to be O(n).
