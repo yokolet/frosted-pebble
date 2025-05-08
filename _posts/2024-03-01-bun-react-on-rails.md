@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Bun + React on Rails
-hero_height: is-small
+featured_image: view-in-lake.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2024-03-01 15:31 +0900
 ---
 In the frontend world, new technologies keep emerging rapidly these years.
@@ -9,7 +11,7 @@ Still, React is a well-established and very popular frontend framework,
 Vue.js, Svelte, Astro and more frameworks are gaining popularity.
 Not just the frameworks, tools for a transpiler/bundler or sort are also under a rapid development.
 In JavaScript domain, esbuild, rollup, vite and some more are out.
-
+<!--more-->
 Relatively new addition is Bun ([https://bun.sh/](https://bun.sh/)).
 
 Bun has multiple features.
@@ -261,7 +263,7 @@ $ bin/dev
 Then go to http://localhost:3000/pages/index on the browser.
 The React app shows up.
 
-<img width="300px" src="/assets/img/rails-bun-react.jpeg" alt="img: bun + react on rails">
+<img width="300px" src="{{ '/assets/img/blog/rails-bun-react.jpeg' | prepend: site.baseurl }}" alt="img: bun + react on rails">
 
 ### References
 - [https://bun.sh/docs](https://bun.sh/docs)

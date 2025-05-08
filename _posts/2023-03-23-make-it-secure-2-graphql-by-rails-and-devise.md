@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Make it Secure 2, GraphQL by Rails and Devise
-hero_height: is-small
+featured_image: pink-flower-and-fuji.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-03-23 17:46 +0900
 ---
 This is the second post about securing Rails GraphQL API app.
@@ -9,7 +11,7 @@ Most of conceptual explanations are in the previous post,
 [Make it Secure, GraphQL by Rails](/2023/03/19/make-it-secure-graphql-by-rails.html).
 This memo is focusing on how to add the authentication using Devise gem
 ([https://github.com/heartcombo/devise](https://github.com/heartcombo/devise)).
-
+<!--more-->
 The GraphQL API itself is the same as the previous one.
 The GraphQL app in the previous post uses Global ID and implements the user authentication from scratch.
 The Devise gem covers many of those.
@@ -181,11 +183,11 @@ mutation register {
 Above query sets only required fields. Other fields can be seen in Insomnia's Schema pane.
 The response fields are the same. The accessToken, client and uid will be used for later queries, so those are requested.
 
-<img src="/assets/img/insomnia-devise-register.jpeg" alt="img: insomnia devise user register">
+<img src="{{ '/assets/img/blog/insomnia-devise-register.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise user register">
 
-Let's check HTTP response headers. As in below, authentication related headers can been seen.
+Let's check HTTP response headers. As in below, authentication related headers can be seen.
 
-<img src="/assets/img/insomnia-devise-register-response-header.jpeg" alt="img: insomnia devise user register response header">
+<img src="{{ '/assets/img/blog/insomnia-devise-register-response-header.jpeg' | prepend:site.baseurl }}" alt="img: insomnia devise user register response header">
 
 
 To login as a registered user, make mutation query below.
@@ -209,8 +211,8 @@ mutation login {
 
 Successful login returns the same result as the registration.
 
-<img src="/assets/img/insomnia-devise-login.jpeg" alt="img: insomnia devise user login">
-<img src="/assets/img/insomnia-devise-login-response-header.jpeg" alt="img: insomnia devise user login response header">
+<img src="{{ '/assets/img/blog/insomnia-devise-login.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise user login">
+<img src="{{ '/assets/img/blog/insomnia-devise-login-response-header.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise user login response header">
 
 
 #### User and Post Models
@@ -357,7 +359,7 @@ query users {
 }
 ```
 
-<img src="/assets/img/insomnia-devise-users.jpeg" alt="img: insomnia devise users query">
+<img src="{{ '/assets/img/blog/insomnia-devise-users.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise users query">
 
 To make the query above, no authentication is required at all.
 
@@ -366,7 +368,7 @@ We can make post query as well, however, it returns an empty array at this momen
 
 #### GraphQL Mutations
 
-The next is a create post mutation so that we can see some results from the post query.
+The next is a post create mutation so that we can see some results from the post query.
 
 
 ```bash
@@ -446,7 +448,7 @@ mutation login {
 }
 ```
 
-<img src="/assets/img/insomnia-devise-login-for-post.jpeg" alt="img: insomnia devise login for post">
+<img src="{{ '/assets/img/blog/insomnia-devise-login-for-post.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise login for post">
 
 The successful login returns accessToken, client, and uid.
 These three are used to authenticate.
@@ -466,9 +468,9 @@ Set three user authentication values to the HTTP request header.
 Be careful, GraphQL result is accessToken, but HTTP request header is access-token.
 Now, we could create a post.
 
-<img src="/assets/img/insomnia-devise-post.jpeg" alt="img: insomnia devise post mutation">
+<img src="{{ '/assets/img/blog/insomnia-devise-post.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise post mutation">
 
-<img src="/assets/img/insomnia-devise-post-headers.jpeg" alt="img: insomnia devise post request headers">
+<img src="{{ '/assets/img/blog/insomnia-devise-post-headers.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise post request headers">
 
 Add some more posts using different user's authentication values.
 
@@ -484,7 +486,7 @@ query posts {
 }
 ```
 
-<img src="/assets/img/insomnia-devise-all-posts.jpeg" alt="img: insomnia devise all posts">
+<img src="{{ '/assets/img/blog/insomnia-devise-all-posts.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise all posts">
 
 To get all post of a specific user, make below query with user's id.
 ```graphql
@@ -498,7 +500,7 @@ query posts {
 }
 ```
 
-<img src="/assets/img/insomnia-devise-post-of-a-user.jpeg" alt="img: insomnia devise posts of a user">
+<img src="{{ '/assets/img/blog/insomnia-devise-post-of-a-user.jpeg' | prepend: site.baseurl }}" alt="img: insomnia devise posts of a user">
 
 ### Code
 

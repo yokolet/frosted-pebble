@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application Development by Rails Action Cable
-featured_image: empty-field-with-fuji.jpg
+featured_image: mid-winter-rocky.jpg
 excerpt_separator: <!--more-->
 hero_height: is-small
 date: 2024-11-11 22:32 +0900

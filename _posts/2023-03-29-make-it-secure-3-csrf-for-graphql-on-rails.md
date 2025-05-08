@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Make it Secure 3, CSRF for GraphQL on Rails
-hero_height: is-small
+featured_image: railway-and-fuji.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-03-29 23:39 +0900
 ---
 This is the third post about securing Rails GraphQL API app.
 The topic is CSRF protection for GraphQL API.
 CSRF is an acronym of [Cross-Site Request Forgery](https://owasp.org/www-community/attacks/csrf),
 and one of well-known vulnerabilities and a type of session hijack.
-
+<!--more-->
 If an attacker succeeds to hijack session, the request from the attacker looks a proper one from a victim.
 The attacker is able to execute state changing operations using victim's identity.
 
@@ -232,8 +234,8 @@ At the same time, the cookie and session are returned.
 If we look at the terminal where Rails is running, "Can't verify CSRF token authenticity." should be spotted among the
 bunch of outputs.
 
-<img src="/assets/img/postman-schema-fetch.jpeg" alt="img: postman schema fetch">
-<img src="/assets/img/postman-schema-fetch-cookie-session.jpeg" alt="img: postman schema fetch cookie session">
+<img src="{{ '/assets/img/blog/postman-schema-fetch.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman schema fetch">
+<img src="{{ '/assets/img/blog/postman-schema-fetch-cookie-session.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman schema fetch cookie session">
 
 The userLogin mutation looks like below:
 ```graphql
@@ -255,8 +257,8 @@ Write the mutation and click "Send" button.
 Again, we'll see "Can't verify CSRF token authenticity." on the terminal, but get the CSRF-TOKEN cookie and session
 in the HTTP response header.
 
-<img src="/assets/img/postman-login-query.jpeg" alt="img: postman login query">
-<img src="/assets/img/postman-login-query-cookie-session.jpeg" alt="img: postman login query cookie session">
+<img src="{{ '/assets/img/blog/postman-login-query.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman login query">
+<img src="{{ '/assets/img/blog/postman-login-query-cookie-session.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman login query cookie session">
 
 The next step is to make posts or users query.
 For example, posts query looks like below:
@@ -276,9 +278,9 @@ The token can be seen in the login response's header, so copy and paste it to th
 Also, make sure the session is set in the cookie.
 Write the query and click "Send" button.
 
-<img src="/assets/img/postman-posts-query-x-csrf-token.jpeg" alt="img: postman posts query x-csrf token">
-<img src="/assets/img/postman-posts-query-session.jpeg" alt="img: postman posts query session">
-<img src="/assets/img/postman-posts-query.jpeg" alt="img: postman posts query">
+<img src="{{ '/assets/img/blog/postman-posts-query-x-csrf-token.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman posts query x-csrf token">
+<img src="{{ '/assets/img/blog/postman-posts-query-session.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman posts query session">
+<img src="{{ '/assets/img/blog/postman-posts-query.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman posts query">
 
 Let's see CSRF verification failure.
 Click check box on the left of X-CSRF-TOKEN to deactivate. The header won't be sent.
@@ -286,7 +288,7 @@ Now we see ActionController::InvalidAuthenticityToken exception.
 On the terminal where Rails is running, "Can't verify CSRF token authenticity." appears again.
 That means the exception strategy is working.
 
-<img src="/assets/img/postman-posts-query-failure.jpeg" alt="img: postman posts query failure">
+<img src="{{ '/assets/img/blog/postman-posts-query-failure.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman posts query failure">
 
 Lastly, let's try postCreate mutation.
 The mutation looks like below:
@@ -311,11 +313,11 @@ in addition to X-CSRF-TOKEN and session.
 Previously tried userLogin mutation gave us those three values already. Set those to the request header.
 Make sure the session is attached in the cookie if the GraphQL client is not Postman.
 
-<img src="/assets/img/postman-create-post-headers.jpeg" alt="img: postman create post headers">
+<img src="{{ '/assets/img/blog/postman-create-post-headers.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman create post headers">
 
 Write the mutation query and click "Send" button.
 
-<img src="/assets/img/postman-create-post-query.jpeg" alt="img: postman create post query">
+<img src="{{ '/assets/img/blog/postman-create-post-query.jpeg' | prepend: site.baseurl }}" width="900" alt="img: postman create post query">
 
 The new post was successfully created.
 

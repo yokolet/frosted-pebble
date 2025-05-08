@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make it Secure, GraphQL by Rails
-featured_image: spring-in-tsugaike.jpg
+featured_image: cherry-blossom-and-fuji.jpg
 excerpt_separator: <!--more-->
 tags: [Ruby on Rails]
 date: 2023-03-19 01:04 +0900

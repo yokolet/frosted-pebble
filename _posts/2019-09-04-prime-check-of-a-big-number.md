@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prime Check of a Big Number
-featured_image: pink-camellia.jpg
+featured_image: halloween-wreath.jpg
 excerpt_separator: <!--more-->
 tags: [Algo, Math]
 date: 2019-09-04 21:05 -0700

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Conserving Network Resources -- Keep-Alive
-featured_image: fall-lake-kawaguchi.jpg
+featured_image: summer-mikurigaike.jpg
 excerpt_separator: <!--more-->
 date: 2024-07-17 21:05 +0900
 ---
 "When you type a URL in your browser, what will happen?"
 If you are a web developer, you might have answered this sort of interview question once or twice.
 It would be a popular question to test the knowledge how the Internet works.
-As it is famous, you will find many answers here and there online.
 <!--more-->
+As it is famous, you will find many answers here and there online.
 
 A common answer includes steps below:
 1. DNS Resolution
@@ -62,7 +62,7 @@ It is a long way to finally get the IP address, however, domain name and IP addr
 A browser and OS have a cache. The local DNS server has a cache as well.
 If the mapping is in the cache, it is a much shorter way.
 
-<img width="1000px" src="/assets/img/DNS_query.jpg" alt="img: DNS query">
+<img width="1000px" src="{{ '/assets/img/blog/DNS_query.jpg' | prepend: site.baseurl }}" alt="img: DNS query">
 
 
 ### TCP Three-Way Handshake
@@ -81,7 +81,7 @@ As the name expresses, the three-way handshake consists of 3 phases.
 
 After above three phases are completed, data can be sent over TCP.
 
-<img width="1000px" src="/assets/img/TCP-3Way-Handshake.jpg" alt="img: TCP 3 Way Handshake">
+<img width="1000px" src="{{ '/assets/img/blog/TCP-3Way-Handshake.jpg' | prepend: site.baseurl }}" alt="img: TCP 3 Way Handshake">
 
 
 ### HTTPS Upgrade (SSL/TLS Handshake)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby on Rails Low Level Cache Programming
-featured_image: pink-flower-and-fuji.jpg
+featured_image: pink-camellia.jpg
 excerpt_separator: <!--more-->
 date: 2025-03-05 22:57 +0900
 ---

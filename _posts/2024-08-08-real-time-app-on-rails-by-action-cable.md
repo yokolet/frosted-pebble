@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Real-time App on Rails by Action Cable
-featured_image: white-peony.jpg
+featured_image: fall-lake-kawaguchi.jpg
 excerpt_separator: <!--more-->
 date: 2024-08-08 23:27 +0900
 ---

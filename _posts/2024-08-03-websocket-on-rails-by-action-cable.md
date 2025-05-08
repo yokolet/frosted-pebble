@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebSocket on Rails by Action Cable
-featured_image: pink-camellia.jpg
+featured_image: fall-village.jpg
 excerpt_separator: <!--more-->
 date: 2024-08-03 00:10 +0900
 ---
@@ -91,7 +91,7 @@ irb(main):004> accpt = Digest::SHA1.base64digest(key + magic)
 => "s3pPLMBiTxaQ9kYGzzhZRbK+xOo="
 ```
 
-<img width="1000px" src="/assets/img/WebSocket.jpg" alt="img: WebSocket">
+<img width="1000px" src="{{ '/assets/img/blog/WebSocket.jpg' | prepend: site.baseurl }}" alt="img: WebSocket">
 
 
 #### WebSocket Heartbeat

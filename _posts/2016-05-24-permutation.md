@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Permutation"
-featured_image: moss-phlox-and-fuji.jpg
+featured_image: spring-northern-alps.jpg
 excerpt_separator: <!--more-->
 tags: [Algo, Combination, Math]
 ---

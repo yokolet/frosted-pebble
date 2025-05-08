@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Ruby on Rails Secrets Management
-hero_height: is-small
+featured_image: fall-woods.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-09-04 15:13 +0900
 ---
 A web application needs various kinds of values, params and etc which should not be revealed to the public, say GitHub repo.
 For example, API keys, tokens, passwords, and endpoints, all those should be kept secret.
 Another important factor is that such secrets should be shared among the team members.
 Additionally, all those secrets should come along with the deployment.
-
+<!--more-->
 Previously, the dotenv file (.env) is commonly used for this purpose.
 When the web application is deployed, the secrets are set up as environment variables.
 
