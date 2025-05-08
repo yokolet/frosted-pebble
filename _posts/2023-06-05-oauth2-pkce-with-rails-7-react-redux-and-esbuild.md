@@ -1,13 +1,16 @@
 ---
 layout: post
 title: OAuth2 PKCE With Rails 7, React/Redux and esbuild
-hero_height: is-small
+featured_image: sunflower.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-06-05 22:47 +0900
 ---
-Logging in to a web site is what users do quite a lot.
+Logging in to a website is what users do quite a lot.
 Suppose it is a blog site.
 Once a user completes a log-in process, the user is allowed to create a new post, update contents and delete a post.
-The blog site might have a feature to leave comments by logged in users.
+The blog site might have a feature to leave comments by logged-in users.
+<!--more-->
 
 The login process is categorized roughly two types: use the login feature implemented in the web site or
 the social login such as Twitter, GitHub, Google, etc.
@@ -379,16 +382,16 @@ export const getTwitterOauthUrl = (): string => {
 
 The button looks like below:
 
-<img src="/assets/img/oauth-pkce-login-button.jpeg" alt="img: oauth pkce login button">
+<img src="{{ '/assets/img/blog/oauth-pkce-login-button.jpeg' | prepend: site.baseurl }}" width="800" alt="img: oauth pkce login button">
 
 When a user (human) clicks the button, Twitter navigates to the login page if the user has not yet logged in.
 If the user is already logged in, this step is skipped.
 
-<img src="/assets/img/oauth-pkce-twitter-login-page.jpeg" alt="img: oauth pkce twitter login page">
+<img src="{{ '/assets/img/blog/oauth-pkce-twitter-login-page.jpeg' | prepend: site.baseurl }}" width="800" alt="img: oauth pkce twitter login page">
 
 After the successful login, Twitter shows the authorize app page.
 
-<img src="/assets/img/oauth-pkce-twitter-authorize-app-page.jpeg" alt="img: oauth pkce twitter authorize app page">
+<img src="{{ '/assets/img/blog/oauth-pkce-twitter-authorize-app-page.jpeg' | prepend: site.baseurl }}" width="800" alt="img: oauth pkce twitter authorize app page">
 
 When the user clicks the Authorize app button, Twitter redirects to the given redirect URI with the code as the URL parameter.
 
@@ -498,7 +501,7 @@ export function TwitterProfile() {
 ...
 ```
 
-<img src="/assets/img/oauth-pkce-user-profile.jpeg" alt="img: oauth pkce user profile">
+<img src="{{ '/assets/img/blog/oauth-pkce-user-profile.jpeg' | prepend: site.baseurl }}" width="800" alt="img: oauth pkce user profile">
 
 #### Core Logic on the Server Side App
 

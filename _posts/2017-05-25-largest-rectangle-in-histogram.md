@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Largest Rectangle in a Histogram"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: early-spring-mountains.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array]
 ---
 
 "Find the largest rectangular area in a histogram" is a famous algorithm
 problem using bars.
 There are some types of problems expressed by bars such as trapping water or skyline.
 Those look like similar since all are plotted on 2D plain multiple bars on.
+<!--more-->
 However, how to think and solve the problems are not the same.
 What data structure and algorithm can be applied to solve problems effectively is,
 sometime, confusing. For this reason, I'm going to add this topic to my memo.
@@ -19,7 +19,7 @@ sometime, confusing. For this reason, I'm going to add this topic to my memo.
 #### Problem Description ####
 
 Given an array of integers which denotes heights of each bar with a width 1,
-find the largest rectangluar area.
+find the largest rectangular area.
 
 For example, the given array is [6, 2, 5, 4, 5, 1, 6], the largest will be
 12 created from index 2 to 4.
@@ -86,13 +86,13 @@ This problem can be solved in a linear time using a stack.
 The stack saves indices which gives the highest so far.
 If histogram heights are 1, 2, and 3, the stack saves all three indices of 0, 1, 2.
 
-Once it hits a lower height, a rectagular area will be calculated at that index.
+Once it hits a lower height, a rectangular area will be calculated at that index.
 For the calculation, it needs the first no greater height seen so far compared to the current height.
 The information is saved in the stack.
 Since the stack saves indices of highest so far,
-popping out indices unitl the corresponding height is higher gives the target index.
+popping out indices until the corresponding height is higher gives the target index.
 
-The target index is the starting index of a subhistogram.
+The target index is the starting index of a sub histogram.
 With starting and current indices, the area will be calculated by multiplying width (difference of indices) and height.
 The ares is the result of the sub problem.
 

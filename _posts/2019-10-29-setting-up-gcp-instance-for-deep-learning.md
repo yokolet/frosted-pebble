@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Setting Up GCP Instance for Deep Learning
+featured_image: bench-in-fall-park.jpg
+excerpt_separator: <!--more-->
+tags: [GCP]
 date: 2019-10-29 17:40 -0700
-hero_height: is-small
 ---
 
 This post is going to be very different from what I write here.
@@ -10,8 +12,9 @@ The content is a memo how I create a GCP (Google Cloud Platform) instance for De
 While I study algorithm stuff, I also have been studying Deep Learning.
 In my early days, I tried to train my Deep Learning model only on a laptop.
 My laptop is 2012 model MacBook Pro, so I would say it is reasonably fast.
+<!--more-->
 However, when it comes to Deep Learning, the training was quite painful on the such machine.
-Often, I ran the training over night to get a disappointed result.
+Often, I ran the training overnight to get a disappointed result.
 Still, I didn't use any of pricey cloud environment
 since it was my personal study unrelated to my day job.
 I wanted to save money.
@@ -219,7 +222,7 @@ You may need to choose the project whose name is the one you set during the conf
 Then, click the hamburger icon (navigation menu) on the top left, Compute Engine, VM instances.
 You'll see your instance is running.
 
-![vm instance]({{ '/assets/img/vm-instance.png' }})
+![vm instance]({{ '/assets/img/blog/vm-instance.png' | prepend: site.baseurl }})
 
 Don't forget to stop the instance.
 To stop the instance, click three dots icon on the right side and choose Stop.
@@ -259,7 +262,7 @@ At the same time, jupyter notebook is available to use on a local machine.
 Go to the web browser and hit the URL, `http://localhost:8080/tree`.
 The jupyter notebook below shows up.
 
-![jupyter notebook]({{ '/assets/img/notebook.png' }})
+![jupyter notebook]({{ '/assets/img/blog/notebook.png' | prepend: site.baseurl }})
 
 ### Access Github Repositories
 
@@ -390,7 +393,7 @@ This section is about to use `Pipenv` on the GCP instance.
 
     The command above lists services controlled by the system.
 
-    ![systemctl output]({{ '/assets/img/systemctl-output.png' }})
+    ![systemctl output]({{ '/assets/img/blog/systemctl-output.png' | prepend: site.baseurl }})
 
     The `jupyter.service` is among them.
 

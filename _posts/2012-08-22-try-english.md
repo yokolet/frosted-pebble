@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Let's try(:english) at Sapporo RubyKaigi 2012"
-description: ""
-category: 
-tags: [ruby, english]
-hero_height: is-small
+featured_image: summer-sky.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby, English]
 ---
 
 Dear Sapporo RubyKaigi Attendees!!
@@ -12,7 +11,6 @@ Dear Sapporo RubyKaigi Attendees!!
 It will open on September 14-16th, less than a month away. In this occasion,
 I'll organize a meetup, which is an attempt to cut down a barrier between English speaking
 Rubyists and Japanese Rubyists. The name of the meetup is "try(:english)"
-
 <!--more-->
 
 Subscribe now! [http://tryenglish.doorkeeper.jp/events/1650](http://tryenglish.doorkeeper.jp/events/1650)

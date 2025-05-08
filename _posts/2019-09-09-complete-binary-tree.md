@@ -1,14 +1,17 @@
 ---
 layout: post
 title: Complete Binary Tree
+featured_image: late-fall-mountains.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Tree]
 date: 2019-09-09 21:19 -0700
-hero_height: is-small
 ---
 
 Problems which ask a binary tree traverse, add/delete nodes, etc. are popular in algorithm questions.
 The binary trees are often just a binary tree or binary search tree.
-Sometimes, the problem pinpoints a particular type of a binary tree,
+Sometimes, the problem pinpoints a particular type of binary tree,
 for example, a balanced binary tree or complete binary tree.
+<!--more-->
 
 The complete binary tree has unique properties.
 Problems which specify the tree as the complete binary tree expect an efficient
@@ -50,6 +53,7 @@ When the right subtree exists the left subtree should be completely filled.
 
 For now, we learned the completed binary tree's properties, it's time to look at algorithm problems.
 
+
 #### Counting Nodes in the Complete Binary Tree
 
 __Problem description__: Given a complete binary tree, find how many nodes are in the tree.
@@ -68,6 +72,7 @@ the next step goes left to check.
 
 Below is the code example of counting problem. It takes a bottom up counting style.
 
+
 #### Code Example of Node Count
 
 {% gist yokolet/64781fb9082954396c34272dd94ae705 %}
@@ -85,6 +90,7 @@ If the left subtree if higher more than one, it is invalid.
 When left min and max heights are not the same, the right min/max should be the same as the left min.
 
 Below is the code example of validation problem. It takes post-order traversal style.
+
 
 #### Code Example of Completeness check
 
@@ -121,6 +127,7 @@ The performance is:
 - initialization: time: `O(n)`, space: `O(n)`
 - insert: time `O(1)`, space: `O(1)`
 - get_root: time `O(1)`, space: `O(1)`
+
 
 #### Ressources
 

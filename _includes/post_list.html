@@ -1,0 +1,28 @@
+{% assign post = include.post %}
+<div class="bg-[#495158] h-full w-full">
+  <div class="grid grid-cols-4 gap-4">
+    <div class="col-span-3 flex flex-col items-start justify-start space-y-2 px-4">
+      <a class="pt-2 md:pt-4 hover:underline decoration-2 underline-offset-2 text-base md:text-lg text-neutral-200 font-semibold"
+         href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <time class="text-sm text-neutral-400" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
+      </time>
+      <div class="pb-2 text-base text-neutral-300">{{ post.excerpt }}</div>
+      <a
+          href="{{ post.url | prepend: site.baseurl }}"
+          class="mb-2 px-4 py-2 bg-[#5d656c] font-semibold text-neutral-300 hover:text-neutral-50 hover:bg-rose-400"
+      >Read more</a>
+    </div>
+    <div>
+      {% if post.featured_image %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-thumbnail">
+        <img
+            src="{{ '/assets/img/featured/' | append: post.featured_image | prepend: site.baseurl }}"
+            alt="{% if post.featured_image_alt %}{{ post.featured_image_alt }}{% else %}{{ post.title }}{% endif %}">
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+
+</div>

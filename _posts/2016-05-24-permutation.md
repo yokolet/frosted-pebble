@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Permutation"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: spring-northern-alps.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Combination, Math]
 ---
 
 Well, how bad naive implementation of generating permutation?
 Permutation is a well-known problem in mathematics as well as
 programming. If a set of three characters, {A, B, C}, its permutation
 is:
+<!--more-->
 
 ```
 ABC, ACB, BAC, BCA, CAB, CBA

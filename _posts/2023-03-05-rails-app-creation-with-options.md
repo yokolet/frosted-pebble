@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Rails App Creation with Options
-hero_height: is-small
+featured_image: lake-motosu-and-fuji.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-03-05 15:50 +0900
 ---
 The easiest way to create a Ruby on Rails app is absolutely to hit the command:
@@ -9,8 +11,8 @@ The easiest way to create a Ruby on Rails app is absolutely to hit the command:
 ```bash
 rails new [APP_NAME]
 ```
-
-Above generates files to develop an entry level app to high end complicated app.
+<!--more-->
+Above generates files to develop an entry level app to high-end complicated app.
 It's pretty handy.
 
 However, that one-size-fits-all like command does too much often.

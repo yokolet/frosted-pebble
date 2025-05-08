@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "Valid Combinations of Numbers"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: fuji-and-mountains.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, String]
 ---
 
 Various types of string related problems exist.
 Among them, splitting it to make something valid would be a typical one.
 For example, a string of numbers is given, "make valid IP addresses" is the example.
 Very similar problem is "make valid lottery numbers."
-
+<!--more-->
 When the given string is made by alphabetical characters,
 the problem may ask word breaks with a dictionary.
 

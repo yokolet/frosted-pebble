@@ -1,13 +1,15 @@
 ---
 layout: post
 title: WebSocket on Rails by Action Cable
-featured_image: pink-camellia.jpg
+featured_image: fall-village.jpg
+excerpt_separator: <!--more-->
 date: 2024-08-03 00:10 +0900
 ---
 In the web application domain, we hear some protocol names.
 Absolutely, HTTP or HTTPS is the most famous protocol that all web developers know.
 Although there's a mechanism of [Keep-Alive](/2024/07/17/conserving-network-resources-keep-alive.html),
 a single request/response sequence with a single client/server is all done by HTTP.
+<!--more-->
 The client initiates the HTTP request to the server. Once the client receives the HTTP response from the server,
 communication finishes. As far as HTTP is used, the server just waits and waits. Only when the request comes in, the
 server can send back some data to the client. This communication style is surprisingly capable of doing many things,
@@ -89,7 +91,7 @@ irb(main):004> accpt = Digest::SHA1.base64digest(key + magic)
 => "s3pPLMBiTxaQ9kYGzzhZRbK+xOo="
 ```
 
-<img width="1000px" src="/assets/img/WebSocket.jpg" alt="img: WebSocket">
+<img width="1000px" src="{{ '/assets/img/blog/WebSocket.jpg' | prepend: site.baseurl }}" alt="img: WebSocket">
 
 
 #### WebSocket Heartbeat

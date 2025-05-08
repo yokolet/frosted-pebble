@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Digital Root"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: white-rose.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 ---
 
 What is digital root? Suppose you are given some digits, say 123456, the digital root will
 be calculated like this:
+<!--more-->
 
 {% highlight java %}
 1 + 2 + 3 + 4 + 5 + 6 = 21

@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Prime Check of a Big Number
+featured_image: halloween-wreath.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 date: 2019-09-04 21:05 -0700
-hero_height: is-small
 ---
 
 "Given an integer `n`, find whether `n` is a prime number or not" -- This is a typical
 algorithm question.
 If the given number is small, repeating a division from 2 to `n` gives the answer.
-
+<!--more-->
 A better solution would be to stop looping at square root of `n`.
 Suppose the given number `n` is not a prime number (composite number), the `n` has
 two numbers `a, b` where `n = ab`.

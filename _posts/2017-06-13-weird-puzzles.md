@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Weird Puzzle Questions - Egg and Celebrity"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: aspen-and-lake.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 ---
 
 I'm going to write about two weird algorithm problems.
@@ -14,8 +13,7 @@ I see these two problems here and there.
 From that, I guess those two are famous algorithm questions.
 But, at least, those two are quite weird.
 Some call them *puzzle*. (Yeah, maybe... I was totally puzzled.)
-
-
+<!--more-->
 
 The egg dropping and finding a celebrity problems are unrelated.
 The approaches and solutions are very different.
@@ -46,7 +44,7 @@ Given above conditions, "find the highest, safe floor to drop the egg" is the pr
 
 #### The idea to find the highest safe floor ####
 
-A bruto force solution is always there which starts dropping the egg from the lowest floor.
+A brute force solution is always there which starts dropping the egg from the lowest floor.
 Then, try one by one going upward to the top floor.
 At some floor, the egg will break for the first time.
 One floor below (the last safe floor) is the answer.

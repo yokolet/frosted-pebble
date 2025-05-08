@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Application Development by Rails Action Cable
-featured_image: empty-field-with-fuji.jpg
+featured_image: mid-winter-rocky.jpg
+excerpt_separator: <!--more-->
 hero_height: is-small
 date: 2024-11-11 22:32 +0900
 ---
 The previous two blog posts introduced WebSocket and how to implement a WebSocket application on Ruby on Rails.
 This blog post digs deeper. It is a memo on creating a more realistic application by Action Cable.
+<!--more-->
 
 ### Real-time application
 

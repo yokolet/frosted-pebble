@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Make it Secure, GraphQL by Rails
-hero_height: is-small
+featured_image: cherry-blossom-and-fuji.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-03-19 01:04 +0900
 ---
 These days, attacks on a web application becomes more and more common.
 Every web application should be protected to get rid of such attacks.
 Ruby on Rails provides ways to make it secure out of the box.
+<!--more-->
 Additionally, well-used gems in Rails world, such as Devise ([https://github.com/heartcombo/devise](https://github.com/heartcombo/devise)),
 give us convenient ways to protect the Rails app.
 
@@ -325,7 +328,7 @@ mutation register {
 ```
 If the user is successfully registered, a tokenized signed Global ID will be returned.
 
-<img src="/assets/img/insomnia-register-query.jpeg" alt="img: insomnia user register query">
+<img src="{{ '/assets/img/blog/insomnia-register-query.jpeg' | prepend: site.baseurl }}" alt="img: insomnia user register query">
 
 The next is a login mutation.
 ```graphql
@@ -344,7 +347,7 @@ mutation login {
 ```
 The login mutation also returns a tokenized signed Global ID.
 
-<img src="/assets/img/insomnia-login-query.jpeg" alt="img: insomnia user login query">
+<img src="{{ '/assets/img/blog/insomnia-login-query.jpeg' | prepend: site.baseurl }}" alt="img: insomnia user login query">
 
 The post create mutation needs HTTP header to complete successfully.
 So, let's try without the token in the HTTP header to see it will fail.
@@ -367,7 +370,7 @@ mutation post {
 
 As expected, it failed without the token in the HTTP header
 
-<img src="/assets/img/insomnia-post-failed.jpeg" alt="img: insomnia failed post query">
+<img src="{{ '/assets/img/blog/insomnia-post-failed.jpeg' | prepend: site.baseurl }}" alt="img: insomnia failed post query">
 
 Then, set Authorization HTTP request header with the token returned from register or login mutation.
 
@@ -377,7 +380,7 @@ Authorization: Token BAh7CEkiCGdpZAY6BkVUSSIsZ2lk.......
 
 Now, it succeeds.
 
-<img src="/assets/img/insomnia-post-with-header.jpeg" alt="img: insomnia post with header">
+<img src="{{ '/assets/img/blog/insomnia-post-with-header.jpeg' | prepend: site.baseurl }}" alt="img: insomnia post with header">
 
 
 ### Code

@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Real-time App on Rails by Action Cable
-featured_image: white-peony.jpg
+featured_image: fall-lake-kawaguchi.jpg
+excerpt_separator: <!--more-->
 date: 2024-08-08 23:27 +0900
 ---
 The previous blog post, [WebSocket on Rails by Action Cable](/2024/08/02/websocket-on-rails-by-action-cable.html),
 focused on WebSocket as a protocol. As in the previous post, by default, Rails app responds to WebSocket connection
-requests without any hassle. However, other than connecting and sending ping frames, it doesn't do anything.
+requests without any hassle.
+<!--more-->
+However, other than connecting and sending ping frames, it doesn't do anything.
 This blog post focuses on an application side and explains how we can create a full-duplex, bidirectional app.
 
 
@@ -26,7 +29,7 @@ The subscriber subscribes to a topic or topics to get updates.
 When the publisher send a message to a broker, the broker sends the message to the related topic.
 Then, the message will be distributed to subscribers who subscribed to the topic previously.
 
-<img width="1200px" src="/assets/img/GeneralPubSub.jpg" alt="img: Pub/Sub architecture in general">
+<img width="1200px" src="{{ '/assets/img/blog/GeneralPubSub.jpg' | prepend: site.baseurl }}" alt="img: Pub/Sub architecture in general">
 
 
 Rails provides a bit simplified version of Pub/Sub architecture.
@@ -38,7 +41,7 @@ When the publisher wants to send the message to a specific method, it performs t
 Once the message arrives to the channel, the message will be broadcast to subscribers.
 In the end, the broadcast message is received by the subscriber through the consumer.
 
-<img width="1200px" src="/assets/img/RailsPubSub.jpg" alt="img: Rails Pub/Sub architecture">
+<img width="1200px" src="{{ '/assets/img/blog/RailsPubSub.jpg' | prepend: site.baseurl }}" alt="img: Rails Pub/Sub architecture">
 
 
 ### Chat: Simple Real-time Application
@@ -346,9 +349,9 @@ Type something in the input box and hit enter.
 The message appears on all browsers immediately.
 Below are the result on Safari, FireFox and Chrome.
 
-<img width="600px" src="/assets/img/action-cable-chat-safari.jpeg" alt="img: Chat on Safari"> \
-<img width="600px" src="/assets/img/action-cable-chat-firefox.jpeg" alt="img: Chat on FireFox"> \
-<img width="600px" src="/assets/img/action-cable-chat-chrome.jpeg" alt="img: Chat on Chrome">
+<img width="600px" src="{{ '/assets/img/blog/action-cable-chat-safari.jpeg' | prepend: site.baseurl }}" alt="img: Chat on Safari"> \
+<img width="600px" src="{{ '/assets/img/blog/action-cable-chat-firefox.jpeg' | prepend: site.baseurl }}" alt="img: Chat on FireFox"> \
+<img width="600px" src="{{ '/assets/img/blog/action-cable-chat-chrome.jpeg' | prepend: site.baseurl }}" alt="img: Chat on Chrome">
 
 
 ### Conclusion

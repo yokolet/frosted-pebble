@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Vite + Vue + Bun on Rails
-hero_height: is-small
+featured_image: pink-camellia.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2024-03-05 21:18 +0900
 ---
 [Vue.js](https://vuejs.org/) is one of frontend frameworks gaining popularity among rapidly emerging JavaScript technologies.
@@ -9,7 +11,7 @@ The combination of Vue.js and Rails is becoming more popular as well,
 however, Vue.js development on Rails is not so straightforward.
 The reason would be that Vue.js relies on [Vite](https://vitejs.dev/) for a development environment
 such as HMR (Hot Module Replacement) and bundling.
-
+<!--more-->
 Since Rails 7, some JavaScript approaches have been supported.
 As of version 7.1.3.2, importmap (default), bun, webpack, esbuild and rollup are the choices.
 Vite is a replacement of such JavaScript approaches, but is not listed yet.
@@ -295,7 +297,7 @@ $ bin/dev
 Open http://localhost:3000/ on a browser.
 The webpage below should show up.
 
-<img width="500px" src="/assets/img/vite_vue_rails.jpeg" alt="img: vite + vue on rails">
+<img width="500px" src="{{ '/assets/img/blog/vite_vue_rails.jpeg' | prepend: site.baseurl }}" alt="img: vite + vue on rails">
 
 Try editing `app/frontend/App.vue` and `app/frontend/components/HelloWorld.vue` and
 verify HMR (Hot Module Replacement) is working.

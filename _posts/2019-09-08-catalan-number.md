@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Catalan number
+featured_image: colored-leaves.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Math]
 date: 2019-09-08 12:41 -0700
-hero_height: is-small
 ---
 
 What is __Catalan number__ ?
@@ -10,12 +12,14 @@ The Catalan number belongs to the domain of combinatorial mathematics.
 It is a sequence of natural numbers such that:
 `1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, 208012, 742900, 2674440, 9694845, 35357670, 129644790, 477638700, 1767263190, ...`
 The sequence appears in counting problems.
+<!--more-->
 Wikipedia has the details about the sequence: [Catalan Number](https://en.wikipedia.org/wiki/Catalan_number).
 
 The algorithm of the Catalan number calculation is not difficult.
 Once the problem is identified as the Catalan number,
 the solution will come up relatively easy.
 However, something not easy is to identify it is the Catalan number problem.
+
 
 #### Various types of counting problems
 
@@ -143,6 +147,7 @@ For a reference, it's worth writing a memo what kind of problems are out there.
     Problem: Given `2n` people seated around the round table, how many patterns exists to
     shake hands without crossing arms.
 
+
 #### Code Example
 
 For all problems above, the number of patterns can be found the code below:
@@ -159,6 +164,7 @@ However, when problem asks accumulation of patterns such as:
 - HackerRank: [Popsicle Stick Mountains](https://www.hackerrank.com/contests/walmart-codesprint-algo/challenges/popsicle-stick-mountains)
 
 the second DP solution works to avoid repetition.
+
 
 #### Resources
 

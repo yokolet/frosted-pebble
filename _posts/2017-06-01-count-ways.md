@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "Count Ways to Do [something]"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: suruga-bay.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, DP]
 ---
 
 "Count how may ways to do ..." is one type of algorithm questions.
 For example, count ways to climb up stairs, count ways to make sum by given coins, 
 or count ways to reach from top left to bottom right corner.
-
+<!--more-->
 For this type of problem, recursion and dynamic programming are often used.
 The recursion is an instinctive and understandable solution.
 However, sometime, its performance goes really worse, say, exponential.
@@ -147,6 +146,7 @@ coins 0| 1  0  0  0  0  0
 
 </pre>
 
+
 #### Java code for coin change ###
 
 Below is the code to count ways to making a sum.
@@ -213,8 +213,6 @@ The result is:
 6
 10
 </pre>
-
-
 
 
 #### Resources ####

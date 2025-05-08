@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Ruby on Rails Low Level Cache Programming
-featured_image: pink-flower-and-fuji.jpg
+featured_image: spring-in-tsugaike.jpg
+excerpt_separator: <!--more-->
 date: 2025-03-05 22:57 +0900
 ---
-Ruby on Rails is known to offer really various features which are useful to create a web application.
+Ruby on Rails is famous for offering really various features which are helpful to create a web application.
 Among those, little known API might be the low level caching API.
-
+<!--more-->
 Basically, people don't code to manipulate cached values. When the caching is on, Rails caches
 view fragments, database query result or some values automatically. As you know the caching is used to
 improve performance in general.

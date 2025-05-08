@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Rails 7 React/Redux Development with esbuild
-hero_height: is-small
+featured_image: yellow-plum-flower.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-05-23 21:47 +0900
 ---
 Rails 7 provides a couple of approaches to bundle a rich JavaScript application such as SPA.
@@ -9,6 +11,7 @@ To create the JavaScript application, we should specify `j|--javascript` option 
 importmap (default), webpack, esbuild or rollup when `rails new` command gets run.
 Although webpack is still among the choices, it has been retired as describe in the
 [https://github.com/rails/webpacker/blob/master/README.md](https://github.com/rails/webpacker/blob/master/README.md).
+<!--more-->
 The choice here is [esbuild](https://esbuild.github.io/) since it is friendly to JavaScript development,
 for example, starting from `yarn create react-app ...`.
 The esbuild is gaining popularity and known to run very fast with its Go-lang implementation.
@@ -280,7 +283,7 @@ As defined in `Procfile.dev`, we need Rails server and esbuild with watch option
 The `bin/dev` command does that.
 If everything goes well, the counter app below shows up at http://localhost:3000/ .
 
-<img src="/assets/img/react-redux-counter-app.jpeg" alt="img: react redux counter app">
+<img src="{{ '/assets/img/blog/react-redux-counter-app.jpeg' | prepend: site.baseurl }}" width="800" alt="img: react redux counter app">
 
 
 ### Code

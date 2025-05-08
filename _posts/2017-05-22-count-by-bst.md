@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Count Smaller By BST"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: white-flower-along-sidewalk.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array, Binary Search Tree]
 ---
 
 Let's count smaller on the right in an array.
 More precisely, the problem is: given an array of integers, count integers smaller than the index i,
 also, located on the right of index i. So, the answer will be also an array of the integers.
 Apparently, the answer to the last element is 0.
+<!--more-->
 
 While trying to solve this algorithm question, I saw a quite neat solution.
 As far as I googled, most solutions used a merge sort with an additional post processing.

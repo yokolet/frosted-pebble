@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Getting Started GraphQL Using Ruby on Rails
-hero_height: is-small
+featured_image: fuji-from-sengen.jpg
+excerpt_separator: <!--more-->
+tags: [Ruby on Rails]
 date: 2023-03-12 01:13 +0900
 ---
 GraphQL is an API standard to provide resources on the server-side to various types of clients.
 GraphQL itself is a specification and doesn't provide an implementation.
 For Ruby on Rails, GraphQL Ruby [https://graphql-ruby.org/](https://graphql-ruby.org/) is the most popular library.
+<!--more-->
 
 Not like REST API, GraphQL has only one endpoint.
 While REST API uses different endpoints (paths or URL) to access multiple types of resources,
@@ -154,7 +157,7 @@ Additional installations are on the GitHub repo.
 
 When the GraphiQL window is firstly opened, it should look like this:
 
-<img src="/assets/img/graphiql-default.jpeg" alt="default graphiql window">
+<img src="{{ '/assets/img/blog/graphiql-default.jpeg' | prepend: site.baseurl }}" width="800" alt="default graphiql window">
 
 Input http://localhost:3000/graphql in the GraphQL Endpoint field, which is defined in `config/routes.rb`
 Also, check the Method choice. It is defined in `config/routes.rb` as POST.
@@ -162,7 +165,7 @@ Then, GraphiQL app connects to Rails and pulls the schema defined in the `app/gr
 and `app/graphql/types/mutation_type.rb`.
 Those schemas show up when "< DOCS" button on the right upper area of GraphiQL window is clicked.
 
-<img src="/assets/img/graphiql-docs.jpeg" alt="default graphiql window">
+<img src="{{ '/assets/img/blog/graphiql-docs.jpeg' | prepend: site.baseurl }}" width="800" alt="default graphiql window">
 
 Both Query and Mutation schemas are displayed when the links get clicked.
 
@@ -178,7 +181,7 @@ Hit the right arrow button above the query input pane.
 The result is on the center pane.
 The message of "Hello World!" is from `app/graphql/types/query_type.rb` file.
 
-<img src="/assets/img/graphiql-query.jpeg" alt="default graphiql window">
+<img src="{{ '/assets/img/blog/graphiql-query.jpeg' | prepend: site.baseurl }}" width="800" alt="default graphiql window">
 
 The mutation query can be sent, however, nothing changes since all are static just a test implementation.
 
@@ -475,7 +478,7 @@ To get all users, the query is simple.
   }
 }
 ```
-<img src="/assets/img/graphiql-users-query.jpeg" alt="graphiql users query">
+<img src="{{ '/assets/img/blog/graphiql-users-query.jpeg' | prepend: site.baseurl }}" width="800" alt="graphiql users query">
 
 
 To get one user using user's id, the query needs a parameter.
@@ -504,7 +507,7 @@ Then, pass the variable in the query variables pane.
   "uid": 1
 }
 ```
-<img src="/assets/img/graphiql-user-with-id-query.jpeg" alt="graphiql user with id query">
+<img src="{{ '/assets/img/blog/graphiql-user-with-id-query.jpeg' | prepend: site.baseurl }}" width="800" alt="graphiql user with id query">
 
 For post queries, with/without user id are defined.
 If the user id is not provided, the query gets all posts.
@@ -538,7 +541,7 @@ query posts($uid: Int) {
   "uid": 2
 }
 ```
-<img src="/assets/img/graphiql-posts-query.jpeg" alt="graphiql posts query">
+<img src="{{ '/assets/img/blog/graphiql-posts-query.jpeg' | prepend: site.baseurl }}" width="800" alt="graphiql posts query">
 
 
 ### Create a New Resource by Mutation

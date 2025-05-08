@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "Skyline Problem"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: summer-sky-over-mountains.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array]
 ---
 
 The skyline problem is another famous algorithm problem using bars, like
 [Lagest Rectangle in a Histogram](http://yokolet.github.io/2017/05/25/largest-rectangle-in-histogram.html).
 Although the problem is described using bars, it is totally another problem
 compared to the largest rectangle. The skyline problem asks range maximum values.
-
+<!--more-->
 While the largest rectangle has almost only one effective algorithm (using stack),
 this problem has a few effective ways to solve it.
 
@@ -26,7 +25,7 @@ The first solution by heap sort is the most popular, simplest way.
 So, the solutions are here and there with a slight variation.
 The second, divide and conquer (merge sort) is interesting solution.
 Not so popular, but still a few are using this technique.
-The third by the segement tree is not so popular, but shows very unique two-step solution.
+The third by the segment tree is not so popular, but shows very unique two-step solution.
 In case of the segment tree, the tree should be created first.
 Then making queries of intervals gives the result.
 
@@ -110,7 +109,7 @@ As far as I compared three well-cited solutions, I decided to choose the first, 
 solution. It is simple and easy to understand.
 However, I ended up in a slight variation of the typical way.
 
-The key ideas is re-queuing the lower height buildings as possible surviors.
+The key ideas is re-queuing the lower height buildings as possible survivors.
 All buildings are sorted by the left position (starting position).
 If multiple buildings have the same left value, those will be sorted by their height.
 Before the re-queuing lower height buildings, those left position will be
@@ -160,7 +159,7 @@ it turns to below:
 This has been seen somewhere else.
 It is quite similar to a weighted scheduling problem.
 Most weighted scheduling doesn't require lower priority jobs to come back.
-However, if it does, the solution will be almost equivalant to the skyline problem.
+However, if it does, the solution will be almost equivalent to the skyline problem.
 
 
 #### Resources ####

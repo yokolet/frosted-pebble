@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Palindromic Substring"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: reflection-on-lake.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, String]
 ---
 
 We often see problems related to a palindrome or palindromic something.
@@ -12,7 +11,7 @@ Palindrome is, like "racecar," a reversed and original are exactly the same stri
 We see really many types of palindrome related problems.
 Sometime, problems are based on palindromic *substrings*.
 Sometime, those are palindromic *subsequences*.
-
+<!--more-->
 The most typical problem is asking the longest palindromic substring or subsequence.
 However, not just the longest, asking partitions is another popular problem.
 As for partition problems, palindromes should be substrings.
@@ -30,11 +29,11 @@ Always, a string will be given to this sort of problems, for example, "aabcbd."
 That's it for an input.
 Then, problems ask what should be found: the longest, min cut (also partitions), print all palindromic partitions, etc.
 The longest is relatively easy problem since there's only one the longest palindrome.
-Theoretically, multiple longests are possible.
+Theoretically, multiple longest palindromes are possible.
 But, normally if one longest is found, that's the answer.
 For example, "aabcbd" is given, the answer is "bcb."
 
-Min cut is more diffucult. It requires an optimal partitioning.
+Min cut is more difficult. It requires an optimal partitioning.
 Since a length one string is a palindrome, [a | a | b | c | b | d] (5 cuts) is one of the
 partitioning based on palindrome.
 However, it's obvious 5-cut isn't the optimal. [aa | bcd | d] (2 cuts) is the answer.
@@ -115,6 +114,7 @@ The table saves whether the substring of index i to j is a palindrome or not.
 Given that, when the value is true, i - j + 1 is the length of palindrome.
 Checking all true positions and compare the length will give me the answer.
 
+
 #### The idea to find minimum cuts ####
 
 The same as the longest problem, minimum cuts sees the table.
@@ -127,6 +127,7 @@ Otherwise, the boundary should be expanded one by one.
 Likewise, looking at table, adds palindrome one by one, shifting the starting index.
 In this case, depth first search by recursion will be a good way to find palindromes
 from the rest of the substring.
+
 
 #### Java code  ####
 
@@ -146,11 +147,8 @@ all: [[a, a, b, c, b, d], [a, a, bcb, d], [aa, b, c, b, d], [aa, bcb, d]]
 </pre>
 
 
-
-
 #### Resources ####
 
 - [Longest Palindromic Substring](http://www.programcreek.com/2013/12/leetcode-solution-of-longest-palindromic-substring-java/)
 - [Palindrome Partitioning](http://www.geeksforgeeks.org/dynamic-programming-set-17-palindrome-partitioning/)
 - [Given a string, print all possible palindromic partitions](http://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/)
-

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Trapping Rain Water"
-description: ""
-category: 
-tags: []
-hero_height: is-small
+featured_image: shishi-odoshi.jpg
+excerpt_separator: <!--more-->
+tags: [Algo, Array]
 ---
 
 "Trapping Rain Water" is one more famous algorithm problem using bars, like
@@ -12,7 +11,7 @@ hero_height: is-small
 [Lagest Rectangle in a Histogram](http://yokolet.github.io/2017/05/25/largest-rectangle-in-histogram.html).
 Compared to other two bar chart problems, this was an easier problem once I understood what I should focus on.
 Also, solutions are posted on many websites, which helped to solve.
-
+<!--more-->
 However, one thing I need to care about is there're two types of problems.
 One is asking a total amount, while another is asking a maximum.
 These are quite similar, but takes a bit different approach.

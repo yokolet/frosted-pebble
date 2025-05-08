@@ -1,11 +1,12 @@
 ---
 layout: post
 title: What is bcrypt gem?
-hero_height: is-small
+featured_image: aspen-and-blue-lake.jpg
+excerpt_separator: <!--more-->
 date: 2024-07-05 23:33 +0900
 ---
 When a Ruby on Rails application is created by `rails new` command, we typically see bcrypt gem in `Gemfile`.
-
+<!--more-->
 ```ruby
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> [VERSION]"
@@ -231,20 +232,20 @@ $ bundle exec rails s
 
 If the server starts, go to http://localhost:3000 on a browser.
 
-<img width="500px" src="/assets/img/devise-sample-buttons.jpeg" alt="img: devise sample buttons">
+<img width="500px" src="{{ '/assets/img/blog/devise-sample-buttons.jpeg' | prepend: site.baseurl }}" alt="img: devise sample buttons">
 
 Sign up the first user with:
 - email: foo@example.com
 - password: Foo'sPassw0rd!
 
-<img width="500px" src="/assets/img/devise-sample-foo-signup.jpeg" alt="img: devise sample sign up foo">
+<img width="500px" src="{{ '/assets/img/blog/devise-sample-foo-signup.jpeg' | prepend: site.baseurl }}" alt="img: devise sample sign up foo">
 
 Click the "Log Out" button and sign up the second user with exactly the same password as the first user:
 
 - email: bar@example.com
 - password: Foo'sPassw0rd!
 
-<img width="500px" src="/assets/img/devise-sample-bar-signup.jpeg" alt="img: devise sample sign up bar">
+<img width="500px" src="{{ '/assets/img/blog/devise-sample-bar-signup.jpeg' | prepend: site.baseurl }}" alt="img: devise sample sign up bar">
 
 
 #### What have been created
