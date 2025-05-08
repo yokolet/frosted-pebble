@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Count Ways to Do [something]"
-featured_image: lake-motosu-and-fuji.jpg
+featured_image: suruga-bay.jpg
 excerpt_separator: <!--more-->
 tags: [Algo, DP]
 ---

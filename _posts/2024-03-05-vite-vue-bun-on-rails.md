@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vite + Vue + Bun on Rails
-featured_image: bougainvillea.jpg
+featured_image: pink-camellia.jpg
 excerpt_separator: <!--more-->
 tags: [Ruby on Rails]
 date: 2024-03-05 21:18 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails App Creation with Options
-featured_image: white-peony.jpg
+featured_image: lake-motosu-and-fuji.jpg
 excerpt_separator: <!--more-->
 tags: [Ruby on Rails]
 date: 2023-03-05 15:50 +0900
