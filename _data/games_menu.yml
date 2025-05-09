@@ -1,0 +1,10 @@
+- label: Algorithm / Games
+  items:
+    - name: Maximum Number of Coins You Can Get
+      link: /algo/games/2024-07-23-maximum-number-of-coins-you-can-get
+    - name: Nim Game
+      link: /algo/games/2024-07-21-nim-game
+    - name: Predict the Winner
+      link: /algo/games/2024-07-23-predict-the-winner
+    - name: Stone Game
+      link: /algo/games/2024-07-22-stone-game

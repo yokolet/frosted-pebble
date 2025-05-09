@@ -1,0 +1,22 @@
+- label: Algorithm / Stacks and Queues
+  items:
+    - name: Basic Calculator II
+      link: /algo/stacks_and_queues/2022-09-08-basic-calculator-ii
+    - name: Largest Rectangle in Histogram
+      link: /algo/stacks_and_queues/2022-09-07-largest-rectangle-in-histogram
+    - name: Make The String Great
+      link: /algo/stacks_and_queues/2022-11-08-make-the-string-great
+    - name: Maximum Number of Robots Within Budget
+      link: /algo/stacks_and_queues/2022-09-21-maximum-number-of-robots-within-budget
+    - name: Minimum Remove to Make Valid Parentheses
+      link: /algo/stacks_and_queues/2022-09-07-minimum-remove-to-make-valid-parentheses
+    - name: Odd Even Jump
+      link: /algo/stacks_and_queues/2022-12-09-odd-even-jump
+    - name: Remove Duplicate Letters
+      link: /algo/stacks_and_queues/2023-01-23-remove-duplicate-letters
+    - name: Sum of Subarray Minimums
+      link: /algo/stacks_and_queues/2022-09-13-sum-of-subarray-minimums
+    - name: Sum of Subarray Ranges
+      link: /algo/stacks_and_queues/2022-09-09-sum-of-subarray-ranges
+    - name: Sum of Total Strength of Wizards
+      link: /algo/stacks_and_queues/2022-09-14-sum-of-total-strength-of-wizards

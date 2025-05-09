@@ -1,0 +1,6 @@
+- label: Algorithm / Backtracking
+  items:
+    - name: Word Search
+      link: /algo/backtracking/2022-09-23-word-search
+    - name: Word Search II
+      link: /algo/backtracking/2022-09-23-word-search-ii

@@ -1,0 +1,24 @@
+- label: Algorithm / Others
+  items:
+    - name: Alert Using Same Key-Card Three or More Times in a One Hour Period
+      link: /algo/others/2022-09-26-alert-using-same-key-card-three-or-more-times-in-a-one-hour-period
+    - name: Concatenation of Consecutive Binary Numbers
+      link: /algo/others/2022-09-23-concatenation-of-consecutive-binary-numbers
+    - name: Find Triangular Sum of an Array
+      link: /algo/others/2022-09-10-find-triangular-sum-of-an-array
+    - name: Largest Perimeter Triangle
+      link: /algo/others/2022-10-20-largest-perimeter-triangle
+    - name: Maximum 69 Number
+      link: /algo/others/2022-11-07-maximum-69-number
+    - name: Maximum AND Sum of Array
+      link: /algo/others/2022-12-22-maximum-and-sum-of-array
+    - name: Maximum Number of Visible Points
+      link: /algo/others/2022-12-20-maximum-number-of-visible-points
+    - name: Minimum Time Difference
+      link: /algo/others/2023-01-20-minimum-time-difference
+    - name: Robot Bounded In Circle
+      link: /algo/others/2022-09-13-robot-bounded-in-circle
+    - name: Set Mismatch
+      link: /algo/others/2022-10-24-set-mismatch
+    - name: The kth Factor of n
+      link: /algo/others/2022-09-12-the-kth-factor-of-n
