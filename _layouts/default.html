@@ -6,10 +6,11 @@
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/syntax-highlighting.css' | relative_url }}">
+  <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
 </head>
 <body class="font-rubik bg-[#394148]">
   {% include nav_bar.html %}
-  {% if page.dir == '/' or page.dir == '/blog/' or page.dir == '/portfolio/' or page.dir == '/algo/' or page.dir == '/about/' %}
+  {% if page.dir == '/' or page.dir == '/portfolio/' or page.dir == '/about/' %}
     {% include head.html %}
   {% else %}
     {% include small_head.html %}
