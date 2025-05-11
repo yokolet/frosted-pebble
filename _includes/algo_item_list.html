@@ -17,7 +17,7 @@
     <ul class="list-disc">
       {% for subitem in submenu.items %}
       <li class="pb-2 text-sm text-stone-300 hover:text-rose-300">
-        <a href="{{ subitem.link | relative_url }}" class="flex items-center h-8">{{ subitem.name }}</a>
+        <a href="{{ subitem.link | prepend: site.baseurl }}" class="flex items-center h-8">{{ subitem.name }}</a>
       </li>
       {% endfor %}
     </ul>

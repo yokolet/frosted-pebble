@@ -62,3 +62,38 @@
     @apply text-[#606669] inline-block text-[16px] h-[24px] w-[24px] leading-[1.5] mx-[10px] my-[6px] hover:text-rose-400;
   }
 }
+
+@utility prose {
+  .tab {
+    @apply relative flex flex-wrap p-0 ml-[-10px]
+  }
+
+  .tab > * {
+    @apply relative flex-none pl-[20px] list-none
+  }
+
+  .tab > * > a {
+    @apply block text-center py-[9px] px-[5px] md:px-[20px] text-[#999] border-b-2 border-solid border-transparent text-[12px]
+    uppercase ease-in-out duration-100 leading-[20px] no-underline
+  }
+
+  .tab > .active > a {
+    @apply text-[#222] border-rose-400 no-underline
+  }
+
+  .tab > li > a {
+    @apply cursor-pointer no-underline
+  }
+
+  .tab-content {
+    @apply p-0
+  }
+
+  .tab-content > li {
+    @apply hidden
+  }
+
+  .tab-content > li.active {
+    @apply block
+  }
+}
