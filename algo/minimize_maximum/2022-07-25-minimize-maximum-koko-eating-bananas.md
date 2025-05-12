@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: algo_page
 title: Minimize Maximum -- Koko Eating Bananas
 date: 2022-07-25 23:26 +0900
 algo_menubar: algo_menu

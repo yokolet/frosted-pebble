@@ -1,7 +1,7 @@
 {% assign menus = site.data.algo_menu %}
 
 <aside data-sidebar-target="sidebarContainer" data-expanded="1" data-controller="sidebar"
-       class="sm:w-1/5 bg-[#495158] min-h-screen">
+       class="sm:w-1/5 bg-[#495158] min-h-screen overflow-x-scroll">
   <div class="sticky top-0 pt-12 px-2 w-full">
     <div data-action="click->sidebar#toggle" data-sidebar-target="icon"
          class="absolute right-2 top-2 cursor-pointer hover:text-rose-200">
@@ -10,7 +10,7 @@
       </svg>
     </div>
     <nav>
-      <div class="flex flex-col px-2 md:px-4 overflow-hidden space-y-4">
+      <div class="flex flex-col px-2 md:px-4 overflow-auto space-y-4 h-[1000px]">
         {% for menu in menus %}
           {% include algo_item_list.html menu=menu index=forloop.index %}
         {% endfor %}

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: algo_page
 title: Minimize Maximum -- Splitting Array
 date: 2022-07-22 16:08 +0900
 algo_menubar: algo_menu
