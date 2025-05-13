@@ -1,9 +1,9 @@
 ---
 layout: algo_page
-title: Minimize Maximum -- Maximum Candies Allocated to K Children
+group: Minimize Maximum
+title: Maximum Candies Allocated to K Children
 date: 2022-07-24 21:57 +0900
 algo_menubar: algo_menu
-hero_height: is-small
 tags: [Medium, Binary Search, Array]
 ---
 

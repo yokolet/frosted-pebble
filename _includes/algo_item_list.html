@@ -4,14 +4,14 @@
 {% assign submenus = site.data.[list] %}
 
 <div
-    class="flex flex-col items-start justify-start border-b border-[#3c4145] mb-4"
+    class="flex flex-col items-start justify-start border-b border-neutral-200 mb-4"
     data-sidebar-target="link"
 >
   <button
       onclick="toggleAccordion({{index}})"
-      class="text-neutral-200 hover:text-rose-200 hover:bg-[#3c4145] w-full flex flex-row items-start justify-between text-xs md:text-sm lg:text-base font-light">
+      class="text-neutral-800 hover:text-rose-400 hover:font-bold w-full flex flex-row items-start justify-between text-xs md:text-sm lg:text-base font-light">
     <span class="h-8 text-sm text-extralight uppercase">{{ name }}</span>
-    <span id="algo-icon-{{index}}" class="text-neutral-50 hover:text-rose-200 transition-transform duration-300">
+    <span id="algo-icon-{{index}}" class="text-neutral-800 hover:text-rose-400 transition-transform duration-300">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
         <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
       </svg>
@@ -21,7 +21,7 @@
     {% for submenu in submenus %}
     <ul class="">
       {% for subitem in submenu.items %}
-      <li class="pl-2 pb-2 text-xs text-stone-300 hover:text-rose-300">
+      <li class="pl-2 pb-2 text-xs text-stone-700 hover:text-rose-400">
         <a href="{{ subitem.link | prepend: site.baseurl }}" class="flex items-center h-8">{{ subitem.name }}</a>
       </li>
       {% endfor %}

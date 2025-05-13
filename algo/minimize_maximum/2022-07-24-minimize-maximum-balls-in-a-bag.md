@@ -1,9 +1,9 @@
 ---
 layout: algo_page
-title: Minimize Maximum -- Minimum Limit of Balls in a Bag
+group: Minimize Maximum
+title: Minimum Limit of Balls in a Bag
 date: 2022-07-24 22:59 +0900
 algo_menubar: algo_menu
-hero_height: is-small
 tags: [Medium, Binary Search, Array]
 ---
 
