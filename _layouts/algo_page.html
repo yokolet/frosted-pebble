@@ -4,24 +4,19 @@ layout: default
 
 <section id="algo">
   <div class="grid grid-cols-1 lg:grid-cols-4 min-h-dvh mx-auto my-0 w-[98%]">
-    <div class="col-span-1 sticky top-14.25 bottom-0 left-0 w-full h-full max-h-[calc(100dvh-(var(--spacing)*14.25))] w-2xs overflow-y-auto p-6">
+    <div class="col-span-1 sticky top-14.25 w-full p-6">
       <div class="text-neutral-200">
         {% include algo_sidebar.html %}
       </div>
     </div>
-    <div class="lg:col-span-3">
-      <div class="mx-auto px-4">
-        <ol class="sticky ml-4 flex min-w-0 items-center gap-2 text-base whitespace-nowrap">
-          <li class="flex items-center gap-2">
-            <span class="text-gray-400 uppercase">{{ page.group }}</span>
-            <svg viewBox="0 0 16 16" class="size-4 fill-gray-200">
-              <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
-            </svg>
-          </li>
-          <li class="truncate text-gray-200">{{ page.title }}</li>
-        </ol>
-      </div>
-      <div class="text-neutral-800 p-4 my-4 mx-6 text-sm md:text-base font-light bg-[#f5f6f6]">
+    <div id="algo-content" class="flex justify-center lg:col-span-3 lg:block">
+      <div class="text-neutral-800 w-9/10 p-4 my-4 mx-6 text-sm md:text-base font-light bg-[#f5f6f6]">
+        <div class="my-6 border-b-1 border-[#c2c7c7]">
+          <p class="flex items-center gap-2 font-mono text-xs md:text-sm font-medium tracking-widest text-rose-800 uppercase">
+            {{ page.group }}
+          </p>
+          <h1 class="mt-2 text-pretty text-base md:text-xl lg:text-2xl font-bold tracking-tight text-rose-950">{{ page.title }}</h1>
+        </div>
         <div class="max-w-full prose">
           {{ content }}
         </div>

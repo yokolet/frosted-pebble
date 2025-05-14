@@ -1,6 +1,7 @@
 ---
 layout: algo_page
-title: Algorithm
+group: Algorithm
+title: Index
 ---
 
 ## Algorithm

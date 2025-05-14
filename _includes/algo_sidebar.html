@@ -1,11 +1,11 @@
 {% assign menus = site.data.algo_menu %}
 
-  <div class="bg-neutral-50">
+  <div class="bg-neutral-50 w-full">
     <div class="flex h-14 items-center border-t border-gray-950/5 bg-white px-4 sm:px-6 lg:hidden">
       <button
           id="algo-menu-btn"
           type="button"
-          class="relative inline-grid size-7 place-items-center rounded-md text-gray-950 hover:bg-gray-950/5  -ml-1.5"
+          class="relative inline-grid size-7 place-items-center rounded-md text-gray-950 hover:bg-gray-950/5 -ml-1.5 cursor-pointer"
           aria-label="Open navigation menu"
       >
         <span class="absolute top-1/2 left-1/2 size-11 -translate-1/2 pointer-fine:hidden"></span>
@@ -23,8 +23,8 @@
         <li class="truncate text-gray-950">{{ page.title }}</li>
       </ol>
     </div>
-    <nav id="algo-nav-menu" class="min-h-0 shrink overflow-y-auto">
-      <div class="flex flex-col px-2 md:px-4 pt-4 space-y-4">
+    <nav id="algo-nav-menu" class="hidden h-full max-h-[calc(100dvh-(var(--spacing)*14.25))] min-h-0 shrink overflow-y-auto lg:block">
+      <div class="flex flex-col w-full px-2 md:px-4 pt-4 space-y-4">
         {% for menu in menus %}
           {% include algo_item_list.html menu=menu index=forloop.index %}
         {% endfor %}
