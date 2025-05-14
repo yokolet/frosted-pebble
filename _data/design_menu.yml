@@ -1,0 +1,34 @@
+- label: Algorithm / Design
+  items:
+    - name: Binary Search Tree Iterator
+      link: /algo/design/2022-09-30-binary-search-tree-iterator
+    - name: Design Circular Queue
+      link: /algo/design/2022-09-25-design-circular-queue
+    - name: Detect Squares
+      link: /algo/design/2022-12-29-detect-squares
+    - name: Find Median from Data Stream
+      link: /algo/design/2022-09-24-find-median-from-data-stream
+    - name: Insert Delete GetRandom O(1)
+      link: /algo/design/2022-12-01-insert-delete-getrandom-o-1
+    - name: LRU Cache
+      link: /algo/design/2022-09-09-lru-cache
+    - name: My Calendar I
+      link: /algo/design/2022-10-07-my-calendar-i
+    - name: My Calendar II
+      link: /algo/design/2022-10-07-my-calendar-ii
+    - name: My Calendar III
+      link: /algo/design/2022-10-07-my-calendar-iii
+    - name: Online Stock Span
+      link: /algo/design/2022-11-09-online-stock-span
+    - name: Peeking Iterator
+      link: /algo/design/2023-01-31-peeking-iterator
+    - name: Random Pick with Weight
+      link: /algo/design/2022-12-28-random-pick-with-weight
+    - name: Range Module
+      link: /algo/design/2022-12-19-range-module
+    - name: Snapshot Array
+      link: /algo/design/2023-01-22-snapshot-array
+    - name: Stock Price Fluctuation
+      link: /algo/design/2022-09-07-stock-price-fluctuation
+    - name: Time Based Key-Value Store
+      link: /algo/design/2022-10-06-time-based-key-value-store

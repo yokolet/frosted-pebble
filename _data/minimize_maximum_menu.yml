@@ -1,0 +1,14 @@
+- label: Algorithm / Minimize Maximum
+  items:
+    - name: Koko Eating Bananas
+      link: /algo/minimize_maximum/2022-07-25-minimize-maximum-koko-eating-bananas
+    - name: Maximum Candies Allocated to K Children
+      link: /algo/minimize_maximum/2022-07-24-minimize-maximum-candies-to-k-children
+    - name: Minimum Limit of Balls in a Bag
+      link: /algo/minimize_maximum/2022-07-24-minimize-maximum-balls-in-a-bag
+    - name: Minimum Number of Days to Make m Bouquets
+      link: /algo/minimize_maximum/2022-07-26-minimize-maximum-min-days-to-make-m-bouquets
+    - name: Shipping Packages in D Days
+      link: /algo/minimize_maximum/2022-07-22-minimize-maximum-shipping-packages-in-d-days
+    - name: Splitting Array
+      link: /algo/minimize_maximum/2022-07-22-minimize-maximum-splitting-array

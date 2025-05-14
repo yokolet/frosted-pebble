@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section id="algo">
+  <div class="grid grid-cols-1 lg:grid-cols-4 min-h-dvh mx-auto my-0 w-[98%]">
+    <div class="col-span-1 sticky top-14.25 w-full p-6">
+      <div class="text-neutral-200">
+        {% include algo_sidebar.html %}
+      </div>
+    </div>
+    <div id="algo-content" class="flex justify-center lg:col-span-3 lg:block">
+      <div class="text-neutral-800 w-9/10 p-4 my-4 mx-6 text-sm md:text-base font-light bg-[#f5f6f6]">
+        <div class="my-6 border-b-1 border-[#c2c7c7]">
+          <p class="flex items-center gap-2 font-mono text-xs md:text-sm font-medium tracking-widest text-rose-800 uppercase">
+            {{ page.group }}
+          </p>
+          <h1 class="mt-2 text-pretty text-base md:text-xl lg:text-2xl font-bold tracking-tight text-rose-950">{{ page.title }}</h1>
+        </div>
+        <div class="max-w-full prose">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

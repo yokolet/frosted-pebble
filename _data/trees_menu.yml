@@ -1,0 +1,46 @@
+- label: Algorithm / Trees
+  items:
+    - name: Add One Row to Tree
+      link: /algo/trees/2022-10-05-add-one-row-to-tree
+    - name: Amount of Time for Binary Tree to Be Infected
+      link: /algo/trees/2022-09-21-amount-of-time-for-binary-tree-to-be-infected
+    - name: Balanced Binary Tree
+      link: /algo/trees/2024-07-12-balanced-binary-tree
+    - name: Binary Tree Inorder Traversal
+      link: /algo/trees/2022-09-30-binary-tree-inorder-traversal
+    - name: Binary Tree Maximum Path Sum
+      link: /algo/trees/2022-12-10-binary-tree-maximum-path-sum
+    - name: Closest Binary Search Tree Value
+      link: /algo/trees/2023-01-16-closest-binary-search-tree-value
+    - name: Construct Binary Search Tree from Preorder Traversal
+      link: /algo/trees/2023-01-17-construct-binary-search-tree-from-preorder-traversal
+    - name: Convert Sorted Array to Binary Search Tree
+      link: /algo/trees/2023-01-15-convert-sorted-array-to-binary-search-tree
+    - name: Delete Node in a BST
+      link: /algo/trees/2024-07-11-delete-node-in-a-bst
+    - name: Increasing Order Search Tree
+      link: /algo/trees/2022-10-14-increasing-order-search-tree
+    - name: Insert into a Binary Search Tree
+      link: /algo/trees/2024-07-10-insert-into-a-binary-search-tree
+    - name: Lowest Common Ancestor of a Binary Search Tree
+      link: /algo/trees/2022-10-29-lowest-common-ancestor-of-a-binary-search-tree
+    - name: Lowest Common Ancestor of a Binary Tree
+      link: /algo/trees/2022-09-26-lowest-common-ancestor-of-a-binary-tree
+    - name: Path Sum
+      link: /algo/trees/2022-10-04-path-sum
+    - name: Path Sum II
+      link: /algo/trees/2022-09-24-path-sum-ii
+    - name: Pseudo-Palindromic Paths in a Binary Tree
+      link: /algo/trees/2022-09-14-pseudo-palindromic-paths-in-a-binary-tree
+    - name: Range Sum of BST
+      link: /algo/trees/2022-12-07-range-sum-of-bst
+    - name: Recover Binary Search Tree
+      link: /algo/trees/2023-01-16-recover-binary-search-tree
+    - name: Step-By-Step Directions From a Binary Tree Node to Another
+      link: /algo/trees/2022-12-17-step-by-step-directions-from-a-binary-tree-node-to-another
+    - name: Two Sum IV - Input is a BST
+      link: /algo/trees/2022-12-06-two-sum-iv-input-is-a-bst
+    - name: Unique Binary Search Trees
+      link: /algo/trees/2023-01-17-unique-binary-search-trees
+    - name: Validate Binary Search Tree
+      link: /algo/trees/2023-01-16-validate-binary-search-tree

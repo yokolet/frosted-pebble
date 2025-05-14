@@ -1,0 +1,24 @@
+- label: Algorithm / Graphs
+  items:
+    - name: Cheapest Flights Within K Stops
+      link: /algo/graphs/2022-10-21-cheapest-flights-within-k-stops
+    - name: Detonate the Maximum Bombs
+      link: /algo/graphs/2022-12-27-detonate-the-maximum-bombs
+    - name: Evaluate Division
+      link: /algo/graphs/2022-10-20-evaluate-division
+    - name: Find All Possible Recipes from Given Supplies
+      link: /algo/graphs/2023-01-20-find-all-possible-recipes-from-given-supplies
+    - name: Network Delay Time
+      link: /algo/graphs/2022-10-21-network-delay-time
+    - name: Number of Good Paths
+      link: /algo/graphs/2022-12-24-number-of-good-paths
+    - name: Number of Provinces
+      link: /algo/graphs/2022-09-17-number-of-provinces
+    - name: Path with Maximum Probability
+      link: /algo/graphs/2022-10-21-path-with-maximum-probability
+    - name: Path With Minimum Effort
+      link: /algo/graphs/2022-10-30-path-with-minimum-effort
+    - name: Satisfiability of Equality Equations
+      link: /algo/graphs/2022-09-26-satisfiability-of-equality-equations
+    - name: Shortest Path in a Grid with Obstacles Elimination
+      link: /algo/graphs/2022-10-30-shortest-path-in-a-grid-with-obstacles-elimination

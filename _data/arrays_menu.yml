@@ -1,0 +1,82 @@
+- label: Algorithm / Arrays
+  items:
+    - name: 4 Sum II
+      link: /algo/arrays/2024-07-09-4-sum-ii
+    - name: Bag of Tokens
+      link: /algo/arrays/2022-09-12-bag-of-tokens
+    - name: Candy
+      link: /algo/arrays/2024-06-21-candy
+    - name: Check if All the Integers in a Range Are Covered
+      link: /algo/arrays/2022-12-12-check-if-all-the-integers-in-a-range-are-covered
+    - name: Check if Every Row and Column Contains All Numbers
+      link: /algo/arrays/2022-09-27-check-if-every-row-and-column-contains-all-numbers
+    - name: Check If N and Its Double Exist
+      link: /algo/arrays/2024-07-08-check-if-n-and-its-double-exist
+    - name: Contains Duplicate II
+      link: /algo/arrays/2022-10-21-contains-duplicate-ii
+    - name: Continuous Subarray Sum
+      link: /algo/arrays/2022-10-26-continuous-subarray-sum
+    - name: Duplicate Zeros
+      link: /algo/arrays/2024-07-06-duplicate-zeros
+    - name: Find Original Array From Doubled Array
+      link: /algo/arrays/2022-09-15-find-original-array-from-doubled-array
+    - name: Find the Difference of Two Arrays
+      link: /algo/arrays/2023-02-09-find-the-difference-of-two-arrays
+    - name: Flood Fill
+      link: /algo/arrays/2022-09-27-flood-fill
+    - name: Gas Station
+      link: /algo/arrays/2022-10-16-gas-station
+    - name: Make Array Zero by Subtracting Equal Amounts
+      link: /algo/arrays/2022-09-21-make-array-zero-by-subtracting-equal-amounts
+    - name: Maximum Sum of Distinct Subarrays With Length K
+      link: /algo/arrays/2024-05-24-maximum-sum-of-distinct-subarrays-with-length-k
+    - name: Merge Sorted Array
+      link: /algo/arrays/2022-09-23-merge-sorted-array
+    - name: Minimum Adjacent Swaps for K Consecutive Ones
+      link: /algo/arrays/2022-09-18-minimum-adjacent-swaps-for-k-consecutive-ones
+    - name: Minimum Health to Beat Game
+      link: /algo/arrays/2022-09-09-minimum-health-to-beat-game
+    - name: Minimum Knight Moves
+      link: /algo/arrays/2022-09-25-minimum-knight-moves
+    - name: Minimum Swaps to Group All 1's Together II
+      link: /algo/arrays/2022-09-18-minimum-swaps-to-group-all-1-s-together-ii
+    - name: Minimum Time to Make Rope Colorful
+      link: /algo/arrays/2022-10-03-minimum-time-to-make-rope-colorful
+    - name: Move Zeroes
+      link: /algo/arrays/2024-07-08-move-zeroes
+    - name: Number of Islands
+      link: /algo/arrays/2022-09-10-number-of-islands
+    - name: Pairs of Songs With Total Durations Divisible by 60
+      link: /algo/arrays/2022-09-21-pairs-of-songs-with-total-durations-divisible-by-60
+    - name: Partition Array Such That Maximum Difference Is K
+      link: /algo/arrays/2022-09-21-partition-array-such-that-maximum-difference-is-k
+    - name: Product of Array Except Self
+      link: /algo/arrays/2024-06-20-product-of-array-except-self
+    - name: Remove Duplicates from Sorted Array
+      link: /algo/arrays/2024-07-08-remove-duplicates-from-sorted-array
+    - name: Remove Element
+      link: /algo/arrays/2024-07-08-remove-element
+    - name: Replace Elements with Greatest Element on Right Side
+      link: /algo/arrays/2024-07-08-replace-elements-with-greatest-element-on-right-side
+    - name: Rotting Oranges
+      link: /algo/arrays/2022-09-12-rotting-oranges
+    - name: Spiral Matrix
+      link: /algo/arrays/2024-07-09-spiral-matrix
+    - name: Subarray Sum Equals K
+      link: /algo/arrays/2022-10-26-subarray-sum-equals-k
+    - name: Sum of Even Numbers After Queries
+      link: /algo/arrays/2022-09-21-sum-of-even-numbers-after-queries
+    - name: The Latest Time to Catch a Bus
+      link: /algo/arrays/2023-01-31-the-latest-time-to-catch-a-bus
+    - name: Trapping Rain Water
+      link: /algo/arrays/2022-09-18-trapping-rain-water
+    - name: Two Sum
+      link: /algo/arrays/2024-08-15-two-sum
+    - name: UTF-8 Validation
+      link: /algo/arrays/2022-09-13-utf-8-validation
+    - name: Valid Mountain Array
+      link: /algo/arrays/2024-07-08-valid-mountain-array
+    - name: Valid Sudoku
+      link: /algo/arrays/2022-09-26-valid-sudoku
+    - name: Where Will the Ball Fall
+      link: /algo/arrays/2022-11-01-where-will-the-ball-fall

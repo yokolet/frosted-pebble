@@ -1,0 +1,42 @@
+- name: Arrays
+  path: /algo/arrays
+  list: arrays_menu
+- name: Strings
+  path: /algo/strings
+  list: strings_menu
+- name: Linked lists
+  path: /algo/linked_lists
+  list: linked_lists_menu
+- name: Stacks and Queues
+  path: /algo/stacks_and_queues
+  list: stacks_and_queues_menu
+- name: Trees
+  path: /algo/trees
+  list: trees_menu
+- name: Graphs
+  path: /algo/graphs
+  list: graphs_menu
+- name: Dynamic Programming
+  path: /algo/dynamic_programming
+  list: dp_menu
+- name: Backtracking
+  path: /algo/backtracking
+  list: backtracking_menu
+- name: Sorting and searching
+  path: /algo/sorting_and_searching
+  list: sorting_and_searching_menu
+- name: Design
+  path: /algo/design
+  list: design_menu
+- name: Others
+  path: /algo/others
+  list: others_menu
+- name: Stocks
+  path: /algo/stocks
+  list: stocks_menu
+- name: Minimize Maximum
+  path: /algo/minimize_maximum
+  list: minimize_maximum_menu
+- name: Games
+  path: /algo/games
+  list: games_menu

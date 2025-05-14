@@ -1,0 +1,26 @@
+- label: Algorithm / Dynamic Programming
+  items:
+    - name: Climbing Stairs
+      link: /algo/dynamic_programming/2022-12-12-climbing-stairs
+    - name: Count Unique Characters of All Substrings of a Given String
+      link: /algo/dynamic_programming/2022-09-14-count-unique-characters-of-all-substrings-of-a-given-string
+    - name: Filling Bookcase Shelves
+      link: /algo/dynamic_programming/2022-12-27-filling-bookcase-shelves
+    - name: Longest Common Subsequence
+      link: /algo/dynamic_programming/2024-05-23-longest-common-subsequence
+    - name: Longest Increasing Path in a Matrix
+      link: /algo/dynamic_programming/2022-10-20-longest-increasing-path-in-a-matrix
+    - name: Maximum Length of Subarray With Positive Product
+      link: /algo/dynamic_programming/2022-09-10-maximum-length-of-subarray-with-positive-product
+    - name: Maximum Length of Repeated Subarray
+      link: /algo/dynamic_programming/2022-09-20-maximum-length-of-repeated-subarray
+    - name: Maximum Score from Performing Multiplication Operations
+      link: /algo/dynamic_programming/2022-09-16-maximum-score-from-performing-multiplication-operations
+    - name: Minimum Swaps To Make Sequences Increasing
+      link: /algo/dynamic_programming/2023-01-25-minimum-swaps-to-make-sequences-increasing
+    - name: Number of Ways to Select Buildings
+      link: /algo/dynamic_programming/2022-09-10-number-of-ways-to-select-buildings
+    - name: Student Attendance Record II
+      link: /algo/dynamic_programming/2023-01-13-student-attendance-record-ii
+    - name: Substring With Largest Variance
+      link: /algo/dynamic_programming/2022-09-14-substring-with-largest-variance

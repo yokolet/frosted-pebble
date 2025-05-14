@@ -1,0 +1,14 @@
+- label: Algorithm / Stocks
+  items:
+    - name: Best Time to Buy and Sell Stock -- Basic
+      link: /algo/stocks/2022-07-26-best-time-to-buy-and-sell-stock-basic
+    - name: Best Time to Buy and Sell Stock III -- Two Transactions
+      link: /algo/stocks/2022-07-26-best-time-to-buy-and-sell-stock-two-transactions
+    - name: Best Time to Buy and Sell Stock II -- Multiple Times
+      link: /algo/stocks/2022-07-26-best-time-to-buy-and-sell-stock-multiple-times
+    - name: Best Time to Buy and Sell Stock IV -- At Most K Transactions
+      link: /algo/stocks/2022-07-26-best-time-to-buy-and-sell-stock-k-transactions
+    - name: Best Time to Buy and Sell Stock with Cooldown
+      link: /algo/stocks/2022-07-27-best-time-to-buy-and-sell-stock-cooldown
+    - name: Best Time to Buy and Sell Stock with Transaction Fee
+      link: /algo/stocks/2022-07-27-best-time-to-buy-and-sell-transaction-fee
