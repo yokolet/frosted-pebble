@@ -4,11 +4,11 @@
 {% assign submenus = site.data.[list] %}
 
 <div
+    id="algo-accordion-{{ index }}"
     class="flex flex-col items-start justify-start border-b border-neutral-200 mb-4"
-    data-sidebar-target="link"
 >
   <button
-      onclick="toggleAccordion({{index}})"
+      onclick="toggleAccordion({{ index }})"
       class="text-neutral-800 hover:text-rose-400 hover:font-bold w-full flex flex-row items-start justify-between text-xs md:text-sm lg:text-base font-light">
     <span class="h-8 text-sm text-extralight uppercase">{{ name }}</span>
     <span id="algo-icon-{{index}}" class="text-neutral-800 hover:text-rose-400 transition-transform duration-300">
