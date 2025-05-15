@@ -1,9 +1,9 @@
 ---
 layout: algo_page
 group: Algorithm
-title: Index
+title: Arrays
+menubar: arrays_menu
 ---
 
 ## Algorithm
-
-Collection of algorithm problem-solving.
+### Arrays

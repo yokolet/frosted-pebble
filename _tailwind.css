@@ -64,6 +64,46 @@
 }
 
 @utility prose {
+  & h1 {
+    @apply text-xl lg:text-2xl my-[1.5rem] font-semibold
+  }
+
+  & h2 {
+    @apply text-lg lg:text-xl  mt-[1.5rem] mb-[1.25rem] font-semibold
+  }
+
+  & code::before,
+  & code::after {
+    content: none;
+  }
+
+  & blockquote {
+    @apply text-sm md:text-base leading-6 font-extralight bg-stone-50 p-2
+  }
+
+  & table {
+    @apply table-auto
+  }
+
+  & tbody tr {
+    @apply w-dvw border-b-1 border-gray-200
+  }
+
+  & tbody td {
+    @apply whitespace-normal max-w-lg
+  }
+
+  & thead {
+    @apply border-b-2 border-gray-200
+  }
+
+  & thead th,
+  & th {
+    @apply mx-auto px-2 leading-none text-center font-semibold text-sm lg:text-base
+  }
+}
+
+@utility prose {
   .tab {
     @apply relative flex flex-wrap p-0 ml-[-10px]
   }
