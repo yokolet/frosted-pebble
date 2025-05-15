@@ -21,7 +21,11 @@
     {% for submenu in submenus %}
     <ul class="">
       {% for subitem in submenu.items %}
-      <li class="pl-2 pb-2 text-xs text-stone-700 hover:text-rose-400">
+      {% assign current = nil %}
+      {% if page.url == subitem.link %}
+      {% assign current = 'font-semibold' %}
+      {% endif %}
+      <li class="pl-2 pb-2 text-xs text-stone-700 hover:text-rose-400 {{ current }}">
         <a href="{{ subitem.link | prepend: site.baseurl }}" class="flex items-center h-8">{{ subitem.name }}</a>
       </li>
       {% endfor %}
