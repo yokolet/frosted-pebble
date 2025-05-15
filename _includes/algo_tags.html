@@ -1,0 +1,9 @@
+{% assign tags = include.tags %}
+
+<div class="flex flex-row items-center justify-start space-x-2 mt-4">
+  {% for tag in tags %}
+  <div class="text-white bg-neutral-500 rounded-xl px-3 py-1 text-xs md:text-sm">
+    {{ tag }}
+  </div>
+  {% endfor %}
+</div>
