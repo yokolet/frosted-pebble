@@ -12,11 +12,11 @@ title: Blog
     {% include posts.html %}
   </div>
   {% if paginator.total_pages > 1 %}
-  <div class="mx-auto flex justify-center gap-4 py-6 font-semibold mb-[48px]"><!-- pagination -->
+  <div class="mx-auto flex justify-center gap-4 py-6 font-semibold mb-[24px]"><!-- pagination -->
     {% if paginator.previous_page %}
     <a
         href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-300 hover:text-white transition-colors"
+        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-400 hover:text-white transition-colors"
     >&laquo; Previous</a>
     {% endif %}
 
@@ -27,9 +27,17 @@ title: Blog
     {% if paginator.next_page %}
     <a
         href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-300 hover:text-white transition-colors">
+        class="px-6 py-2 rounded-xs bg-[#606669] text-[#f2f5f7] hover:bg-rose-400 hover:text-white transition-colors">
       Next &raquo;</a>
     {% endif %}
   </div>
   {% endif %}
+
+  <div class="flex items-center justify-center mx-auto">
+    <a class="mb-6 px-4 py-2 bg-rose-300 hover:bg-rose-400 text-neutral-100 font-semibold rounded-lg"
+        href="{{ '/feed.xml' | prepend: site.baseurl }}"
+    >
+      <span><i class="fa-solid fa-rss"></i> Subscribe</span>
+    </a>
+  </div>
 </main>
