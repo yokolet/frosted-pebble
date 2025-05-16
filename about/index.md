@@ -18,5 +18,5 @@ This website is created by [jekyll](https://jekyllrb.com/) and
 [Tailwind CSS](https://tailwindcss.com/) using
 [tailwindcss-ruby gem](https://github.com/flavorjones/tailwindcss-ruby).
 The website code is pushed to the GitHub repository: [frosted-pebble
-](https://github.com/idealapt404/frosted-pebble).
+](https://github.com/yokolet/frosted-pebble).
 Please visit the repo also!
