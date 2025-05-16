@@ -44,6 +44,9 @@ linkedin_username: yokolet
 github_username:  yokolet
 gitlab_username:  yokolet
 
+# Google analytics
+google_analytics: G-WWDGEJ9Y9L
+
 navigation:
   - text: Home
     url: /
