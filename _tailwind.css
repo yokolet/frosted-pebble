@@ -77,6 +77,11 @@
     content: none;
   }
 
+  & blockquote p:first-of-type::before,
+  & blockquote p:first-of-type::after {
+    content: none;
+  }
+
   & blockquote {
     @apply text-sm md:text-base leading-6 font-extralight bg-stone-50 p-2
   }
