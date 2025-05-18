@@ -14,9 +14,10 @@ Writing by my own words helps me to understand things and shape ideas better.
 
 The update is random. When I’m impressed by something, I write a new post.
 
-This website is created by [jekyll](https://jekyllrb.com/) and
+This website is created by [Jekyll](https://jekyllrb.com/) and
 [Tailwind CSS](https://tailwindcss.com/) using
-[tailwindcss-ruby gem](https://github.com/flavorjones/tailwindcss-ruby).
+[jekyll-tailwind](https://github.com/vormwald/jekyll-tailwindcss) and
+[tailwindcss-ruby](https://github.com/flavorjones/tailwindcss-ruby) gems.
 The website code is pushed to the GitHub repository: [frosted-pebble
 ](https://github.com/yokolet/frosted-pebble).
 Please visit the repo also!
