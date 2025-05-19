@@ -1,0 +1,14 @@
+#### Rainy Days
+- GitLab: 
+- GitHub: [https://github.com/yokolet/rainy-days](https://github.com/yokolet/rainy-days)
+- Live: [https://blogging-in-rainy-days.onrender.com/](https://blogging-in-rainy-days.onrender.com/)
+- Multi-user, microblog application by Ruby on Rails and Vue.js, revised version of Rainy Day Blog
+- OAuth2 Authorization Code Flow or PKCE(Proof Key for Code Exchange) by Google, GitHub and GitLab for a user authentication
+- GraphQL API for blog posts and comments
+    - (backend) GraphQL Ruby, (frontend) Vue Apollo
+- Technologies on the backend
+    - Rails 8, PostgreSQL, RSpec, Vite Ruby, nested comments
+- Technologies on the frontend
+    - Vue.js 3, Composition API, Vite, Bun, TypeScript, Vue Router, Pinia, Tailwind CSS, Responsive Design, Light/Dark mode
+- GitLab CI/CD
+- Docker

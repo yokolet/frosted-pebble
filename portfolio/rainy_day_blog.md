@@ -1,0 +1,11 @@
+#### Rainy Day Blog
+- GitLab: [https://gitlab.com/yokolet/rainy-day-blog](https://gitlab.com/yokolet/rainy-day-blog)
+- GitHub: [https://github.com/yokolet/rainy-day-blog](https://github.com/yokolet/rainy-day-blog)
+- Blog site web application by Ruby on Rails with Vue 3
+- OAuth2 PKCE (Authorization Code Flow with Proof Key for Code Exchange) for a user authentication
+- GraphQL for a blog post API
+    - (backend) GraphQL Ruby, (frontend) Vue Apollo
+- Others on the backend
+    - PostgreSQL, Redis, RSpec, Vite Ruby
+- Others on the frontend
+    - Vite, Bun, Composition API, Vue Router, Pinia, Tailwind CSS, Daisy UI

@@ -1,0 +1,68 @@
+web:
+  - title: Rainy Days
+    category: Web Application
+    gitlab: https://gitlab.com/yokolet/rainy-days
+    github: https://github.com/yokolet/rainy-days
+    demo: https://blogging-in-rainy-days.onrender.com/
+    tags: [ Ruby on Rails, Vue.js, OAuth, GraphQL, PostgreSQL, RSpec, TypeScript, Tailwind CSS, Bun, Vite ]
+    file: rainy_days.md
+  - title: Action Cable Tic-Tac-Toe
+    category: Web Application
+    gitlab: https://gitlab.com/yokolet/action-cable-tictactoe
+    github: https://github.com/yokolet/action-cable-tictactoe
+    demo: https://action-cable-tictactoe-2fbbd874419e.herokuapp.com/
+    tags: [ Ruby on Rails, Vue.js, WebSocket, RSpec, TypeScript, Tailwind CSS, Bun, Vite ]
+    file: action_cable_tictactoe.md
+  - title: Option Selector
+    category: Web Application
+    gitlab: https://gitlab.com/yokolet/option-selector
+    github: https://github.com/yokolet/option-selector
+    demo: https://yokolet.gitlab.io/option-selector/
+    tags: [ Vue.js, TypeScript, Tailwind CSS, Bun, Vite, Vitest ]
+    file: option_selector.md
+  - title: Tailwind Website Projects
+    category: Web Application
+    gitlab: https://gitlab.com/yokolet/tailwind-website-projects
+    github: https://github.com/yokolet/tailwind-website-projects
+    demo: https://yokolet.gitlab.io/tailwind-website-projects/
+    tags: [ Vue.js, TypeScript, Tailwind CSS, Bun, Vite ]
+    file: tailwind_website_projects.md
+  - title: Rainy Day Blog
+    category: Web Application
+    gitlab: https://gitlab.com/yokolet/rainy-day-blog
+    github: https://github.com/yokolet/rainy-day-blog
+    tags: [ Ruby on Rails, Vue.js, OAuth, GraphQL, PostgreSQL, RSpec, TypeScript, Tailwind CSS, Bun, Vite, Daisy UI ]
+    file: rainy_day_blog.md
+  - title: Transcript App
+    category: Web Application
+    github: [https://github.com/yokolet/transcript-web, https://github.com/yokolet/transcript]
+    demo: https://blogging-in-rainy-days.onrender.com/
+    tags: [ GraphQL, Python, Flask ]
+    file: transcript_app.md
+  - title: textblog
+    category: Web Application
+    github: https://github.com/yokolet/textblog
+    tags: [ Ruby on Rails, GraphQL, React/Redux, OAuth, PostgreSQL ]
+    file: textblog.md
+cpp:
+  - title: Snake Game
+    category: C++
+    github: https://github.com/yokolet/sdl-snake
+    tags: [ ]
+    file: snake_game.md
+  - title: Traffic simulation
+    category: C++
+    github: https://github.com/yokolet/traffic-simulation
+    tags: [ ]
+    file: traffic_simulation.md
+ml:
+  - title: Becoming Jane by Deep Learning
+    category: Machine Learning
+    github: https://github.com/yokolet/DeepLearning/tree/master/Jane
+    tags: [ Deep Learning, NLP ]
+    file: becoming_jane.md
+  - title: Small deep leaning projects
+    category: Machine Learning
+    github: https://github.com/yokolet/DeepLearning
+    tags: [ ]
+    file: deep_learning_projects.md

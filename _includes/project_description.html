@@ -1,0 +1,8 @@
+{% assign project = include.project %}
+{% capture description %}{% include_relative {{ project.file }} %}{% endcapture %}
+{% assign description = description | markdownify %}
+
+<div class="bg-[#495158] h-full w-full">
+  <div>GitHub: {{ project.github }}</div>
+  <div>{{ description }}</div>
+</div>
