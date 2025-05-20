@@ -20,7 +20,7 @@ layout: default
           {{page.title}}
         </h1>
       </div>
-      <div class="mx-auto w-9/10 grid grid-cols-1 md:grid-cols-3 gap-x-2 md:gap-x-4 lg:gap-x-6">
+      <div class="mx-auto w-9/10 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 lg:gap-6">
         <div>
           <div class="py-2 text-xl m:text-2xl lg:text-3xl font-bold
           bg-gradient-to-r from-rose-400 to-rose-50 inline-block text-transparent bg-clip-text">
@@ -30,22 +30,22 @@ layout: default
             Software Engineer
           </div>
           <div class="text-sm md:text-base lg:text-lg text-slate-400">
-            I have engaged in various kinds of developments and love to learn new technologies.
+            I have engaged in various kinds of software projects and love to learn new technologies.
             I enjoy walking and hiking.
           </div>
         </div>
-        <div class="col-span-2 w-full px-2 prose prose-invert mx-auto text-base md:text-xl font-light">
-          <div>
+        <div class="col-span-2 w-full px-2 mx-auto mb-4 text-base md:text-xl font-light">
+          <div class="mb-4 flex flex-col items-center space-y-4">
             {% for project in web %}
               {% include project_description.html project=project %}
             {% endfor %}
           </div>
-          <div>
+          <div class="mb-4 flex flex-col items-center space-y-4">
             {% for project in cpp %}
             {% include project_description.html project=project %}
             {% endfor %}
           </div>
-          <div>
+          <div class="flex flex-col items-center space-y-4">
             {% for project in ml %}
             {% include project_description.html project=project %}
             {% endfor %}
@@ -54,6 +54,5 @@ layout: default
         </div>
       </div>
     </div>
-    {% include about_author.html %}
   </div>
 </section>

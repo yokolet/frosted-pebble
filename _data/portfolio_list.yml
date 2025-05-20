@@ -4,28 +4,28 @@ web:
     gitlab: https://gitlab.com/yokolet/rainy-days
     github: https://github.com/yokolet/rainy-days
     demo: https://blogging-in-rainy-days.onrender.com/
-    tags: [ Ruby on Rails, Vue.js, OAuth, GraphQL, PostgreSQL, RSpec, TypeScript, Tailwind CSS, Bun, Vite ]
+    tags: [ Ruby on Rails, Vue.js, Docker, CI/CD, OAuth PKCE, GraphQL, PostgreSQL, RSpec, TypeScript, Tailwind CSS ]
     file: rainy_days.md
   - title: Action Cable Tic-Tac-Toe
     category: Web Application
     gitlab: https://gitlab.com/yokolet/action-cable-tictactoe
     github: https://github.com/yokolet/action-cable-tictactoe
     demo: https://action-cable-tictactoe-2fbbd874419e.herokuapp.com/
-    tags: [ Ruby on Rails, Vue.js, WebSocket, RSpec, TypeScript, Tailwind CSS, Bun, Vite ]
+    tags: [ Ruby on Rails, Vue.js, WebSocket, CI/CD, RSpec, TypeScript, Tailwind CSS ]
     file: action_cable_tictactoe.md
   - title: Option Selector
     category: Web Application
     gitlab: https://gitlab.com/yokolet/option-selector
     github: https://github.com/yokolet/option-selector
     demo: https://yokolet.gitlab.io/option-selector/
-    tags: [ Vue.js, TypeScript, Tailwind CSS, Bun, Vite, Vitest ]
+    tags: [ Vue.js, TypeScript, Tailwind CSS, CI/CD, Bun, Vite, Vitest ]
     file: option_selector.md
   - title: Tailwind Website Projects
     category: Web Application
     gitlab: https://gitlab.com/yokolet/tailwind-website-projects
     github: https://github.com/yokolet/tailwind-website-projects
     demo: https://yokolet.gitlab.io/tailwind-website-projects/
-    tags: [ Vue.js, TypeScript, Tailwind CSS, Bun, Vite ]
+    tags: [ Vue.js, TypeScript, Tailwind CSS, CI/CD, Bun, Vite ]
     file: tailwind_website_projects.md
   - title: Rainy Day Blog
     category: Web Application
@@ -36,7 +36,6 @@ web:
   - title: Transcript App
     category: Web Application
     github: [https://github.com/yokolet/transcript-web, https://github.com/yokolet/transcript]
-    demo: https://blogging-in-rainy-days.onrender.com/
     tags: [ GraphQL, Python, Flask ]
     file: transcript_app.md
   - title: textblog
