@@ -18,6 +18,6 @@ This website is created by [Jekyll](https://jekyllrb.com/) and
 [Tailwind CSS](https://tailwindcss.com/) using
 [jekyll-tailwind](https://github.com/vormwald/jekyll-tailwindcss) and
 [tailwindcss-ruby](https://github.com/flavorjones/tailwindcss-ruby) gems.
-The website code is pushed to the GitHub repository: [frosted-pebble
-](https://github.com/yokolet/frosted-pebble).
+I didn't use any existing theme. Instead, I wrote a lot of CSS by Tailwind for this site.
+The website code is pushed to the GitHub repository: [frosted-pebble](https://github.com/yokolet/frosted-pebble).
 Please visit the repo also!
