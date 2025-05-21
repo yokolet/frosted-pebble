@@ -30,12 +30,14 @@
     </div>
   </div>
   {% if project.demo %}
-  <div class="text-sm md:text-base lg:text-lg text-teal-200 hover:text-rose-200">
+  <div class="text-sm md:text-base lg:text-lg text-[#a6d9e2] hover:text-rose-200">
     <a href="{{ project.demo }}">
       <span><i class="fa-solid fa-square-arrow-up-right"></i></span> {{ project.demo }}
     </a>
   </div>
   {% endif %}
-  <div class="w-full mt-2 prose prose-invert">{{ description }}</div>
+  <div class="w-full mt-2 prose prose-invert prose-a:text-[#a6d9e2]">
+    {{ description }}
+  </div>
   {% include algo_tags.html tags=project.tags %}
 </div>

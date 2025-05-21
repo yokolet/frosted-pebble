@@ -58,10 +58,10 @@ ml:
   - title: Becoming Jane by Deep Learning
     category: Machine Learning
     github: https://github.com/yokolet/DeepLearning/tree/master/Jane
-    tags: [ Deep Learning, NLP ]
+    tags: [ Deep Learning, NLP, TensorFlow ]
     file: becoming_jane.md
-  - title: Small deep leaning projects
+  - title: Small deep learning projects
     category: Machine Learning
     github: https://github.com/yokolet/DeepLearning
-    tags: [ ]
+    tags: [ CNN, DCGAN, RL, RNN ]
     file: deep_learning_projects.md

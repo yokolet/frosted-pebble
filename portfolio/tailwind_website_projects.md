@@ -1,8 +1,8 @@
-#### Tailwind Website Projects
-- GitLab: [https://gitlab.com/yokolet/tailwind-website-projects](https://gitlab.com/yokolet/tailwind-website-projects)
-- GitHub: [https://github.com/yokolet/tailwind-website-projects](https://github.com/yokolet/tailwind-website-projects)
-- Live: [https://yokolet.gitlab.io/tailwind-website-projects/](https://yokolet.gitlab.io/tailwind-website-projects/)
-- Six static websites for Tailwind CSS study
-- Vue 3, TypeScript, Vite, Tailwind CSS
-- Other technologies: Bun, Vue Router, VueUse, Google Fonts, Responsive Design
-- GitLab CI/CD
+Front-end only application.
+This project is for Tailwind CSS study, and has six static websites.
+All those websites are great materials to learn about web page designs.
+Needless to say, all web pages are responsive.
+Addition to the six websites is Vue.js, which provides a routing and interactive features.
+Along with Vue.js, the application uses TypeScript, Vue Router, VueUse, Google Fonts.
+
+The application is deployed to GitLab pages through GitLab CI/CD.

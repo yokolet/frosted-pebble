@@ -1,4 +1,2 @@
-#### Traffic simulation
-- [https://github.com/yokolet/traffic-simulation](https://github.com/yokolet/traffic-simulation)
-- Traffic simulation
-- Thread management
+Traffic simulation application for C++ study.
+The app's purpose is a thread management.
