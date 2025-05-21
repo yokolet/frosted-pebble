@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% assign portfolio_list = site.data.portfolio_list %}
+{% assign web = portfolio_list.web %}
+{% assign cpp = portfolio_list.cpp %}
+{% assign ml = portfolio_list.ml %}
+
+<section id="{{ page.id }}">
+  <div class="container text-neutral-200 bg-[#495158] mx-auto my-10 w-9/10 md:w-5/6 lg:w-4/6">
+    <div class="animate-fade-in w-full flex flex-col items-center justify-start mx-auto">
+      {% if page.hero_image %}
+        <img
+            src="{{ '/assets/img/hero/' | append: page.hero_image | prepend: site.baseurl }}"
+            alt="{{ page.hero_image_alt }}"
+            class="w-full">
+      {% endif %}
+      <div class="mx-auto w-9/10 my-4 md:my-10 border-b-1 border-neutral-400">
+        <h1 class="m-0 text-xl md:text-2xl font-bold tracking-tight text-neutral-200">
+          {{page.title}}
+        </h1>
+      </div>
+      <div class="mx-auto w-9/10 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+        <div class="w-full mx-auto px-2 mb-4">
+          <div class="py-2 text-xl m:text-2xl lg:text-3xl font-bold
+          bg-gradient-to-r from-rose-400 to-rose-50 inline-block text-transparent bg-clip-text">
+            Yoko Harada
+          </div>
+          <div class="pb-2 text-base md:text-lg lg:text-xl text-neutral-300">
+            Software Engineer
+          </div>
+          <div class="text-sm md:text-base lg:text-lg text-[#75b9c5]">
+            I have worked on various kinds of software projects and love to learn new technologies.
+            I enjoy walking and hiking.
+          </div>
+        </div>
+        <div class="col-span-2 w-full px-2 mx-auto mb-4 text-base md:text-xl font-light">
+          <div class="mb-4 flex flex-col items-center space-y-4">
+            {% for project in web %}
+              {% include project_description.html project=project %}
+            {% endfor %}
+          </div>
+          <div class="mb-4 flex flex-col items-center space-y-4">
+            {% for project in cpp %}
+            {% include project_description.html project=project %}
+            {% endfor %}
+          </div>
+          <div class="flex flex-col items-center space-y-4">
+            {% for project in ml %}
+            {% include project_description.html project=project %}
+            {% endfor %}
+          </div>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

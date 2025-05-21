@@ -1,0 +1,43 @@
+{% assign project = include.project %}
+{% capture description %}{% include_relative {{ project.file }} %}{% endcapture %}
+{% assign description = description | markdownify %}
+
+<div class="w-full mx-auto bg-[#394148] rounded-lg shadow-md p-4 flex flex-col items-start">
+  <div class="text-base"><span><i class="fa-solid fa-mountain-sun"></i></span></div>
+  <div class="text-sm">{{ project.category }}</div>
+  <div class="w-full mx-auto flex flex-row items-center justify-between space-x-4">
+    <div class="text-xl text-rose-400 font-bold">{{ project.title }}</div>
+    <div class="text-2xl">
+      {% if project.github %}
+      {% if project.github.first %}
+      <a class="text-rose-100 hover:text-rose-400" href="{{ project.github[0] }}">
+        <span><i class="fa-brands fa-github"></i></span>
+      </a>
+      <a class="text-teal-100 hover:text-teal-300" href="{{ project.github[1] }}">
+        <span><i class="fa-brands fa-github"></i></span>
+      </a>
+      {% else %}
+      <a class="text-rose-100 hover:text-rose-400" href="{{ project.github }}">
+        <span><i class="fa-brands fa-github"></i></span>
+      </a>
+      {% endif %}
+      {% endif %}
+      {% if project.gitlab %}
+      <a class="pl-2 text-rose-100 hover:text-rose-400" href="{{ project.gitlab }}">
+        <span><i class="fa-brands fa-gitlab"></i></span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% if project.demo %}
+  <div class="text-sm md:text-base lg:text-lg text-[#a6d9e2] hover:text-rose-200">
+    <a href="{{ project.demo }}">
+      <span><i class="fa-solid fa-square-arrow-up-right"></i></span> {{ project.demo }}
+    </a>
+  </div>
+  {% endif %}
+  <div class="w-full mt-2 prose prose-invert prose-a:text-[#a6d9e2]">
+    {{ description }}
+  </div>
+  {% include algo_tags.html tags=project.tags %}
+</div>
