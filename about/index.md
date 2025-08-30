@@ -3,6 +3,8 @@ layout: page
 title: About yokolet's notelets
 id: about
 hero_image: frosted-pebble.jpg
+redirect_from:
+  - /about/whoami/
 ---
 
 Hi! Thank you for visiting my website!
